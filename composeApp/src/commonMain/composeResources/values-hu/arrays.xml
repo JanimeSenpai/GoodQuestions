@@ -1,0 +1,164 @@
+<resources>
+    <string-array name="questions_university">
+        <item>Ha ingyen kapnál egy utazást, hova utaznál most és miért?</item>
+        <item>Ha nem dolgozhatnál semmilyen intellektuális területen, milyen nem értelmiségi munkát választanál?</item>
+        <item>Milyen fizikai teljesítményedre vagy a legbüszkébb?</item>
+        <item>Ha az egyetemen kéne dolgoznod a jövőben, milyen pozíciót töltenél be?</item>
+        <item>Mi szerinted a legrosszabb emberi tulajdonságod?</item>
+        <item>Melyik az a film/sorozat, ami nagyon népszerű, de te nem láttad? Miért?</item>
+        <item>Melyik film kötelező darab szerinted?</item>
+        <item>Melyik hobbidra kívánod, hogy több időd legyen?</item>
+        <item>Melyik családtagodhoz állsz a legközelebb?</item>
+        <item>Ha lehetne egy szuperképességed, mi lenne az?</item>
+        <item>Milyen nyelveken beszélsz, és milyenen akarsz megtanulni?</item>
+        <item>Milyen szabályt szegsz meg gyakran?</item>
+        <item>Ha bármelyik történelmi korszakban élhetnél, melyiket választanád?</item>
+        <item>Ha egy fantasy regény világában élhetnél, melyiket választanád?</item>
+        <item>Szeretnél híres lenni? Hogyan?</item>
+        <item>Számodra miből állna egy „tökéletes” hétköznap?</item>
+        <item>Mondj három dolgot, amiről úgy tűnik, hogy közös benned és a partneredben!</item>
+        <item>Miért vagy a leghálásabb az életben?</item>
+        <item>Ha megváltoztathatnál valamit abban, hogy hogyan neveltek fel, mit változtatnál meg?</item>
+        <item>Meséld el a partnerednek életed történetét négy percben, olyan részletesen, ahogy csak belefér!</item>
+        <item>Ha egy kristálygömbből megtudhatnád az igazságot magadról, az életedről, a jövődről vagy bármi másról, mit szeretnél tudni?</item>
+        <item>Van olyasmi, amiről régóta álmodozol már, hogy egyszer megcsinálod? Miért nem csináltad még meg?</item>
+        <item>Mi életed legnagyobb teljesítménye?</item>
+        <item>Mi a legnagyobb érték számodra egy barátságban?</item>
+        <item>Mi az idei nyarad legszebb emléke?</item>
+        <item>Ha most megtudnád, hogy egy év múlva meghalsz, változtatnál valamit az életeden? Miért?</item>
+        <item>Mit jelent számodra a barátság?</item>
+        <item>Milyen szerepet játszanak az életedben a szerelem és az érzelmek?</item>
+        <item>Mennyire szoros és meghitt a kapcsolatod a családoddal? Szerinted boldogabb gyerekkorod volt, mint az emberek többségének?</item>
+        <item>Fejezd be ezt a mondatot: „bár lenne valaki, akivel megoszthatnám...”!</item>
+        <item>Ha partnerednek közeli barátjává válnál, mondd el, mit kéne neki tudnia rólad!</item>
+        <item>Mikor látott utoljára valaki sírni téged? És mikor sírtál utoljára egyedül?</item>
+        <item>Mi az, ami olyan komoly dolog, hogy nem szabad vele viccelni, már ha egyáltalán vannak ilyen dolgok?</item>
+        <item>Kigyullad a házad és benne minden tulajdonod. Kimentetted már a szeretteidet és háziállataidat, de már csak egyvalamiért tudsz visszarohanni, hogy kimentsd. Mi lenne az? Miért?</item>
+        <item>Mennyi idős lennél, ha most megválaszthatnád a korodat?</item>
+        <item>Mit kezdenél a hátralévő életeddel, ha mostantól nem kellene dolgoznod?</item>
+        <item>Mi akartál lenni tíz évvel ezelőtt? Mennyire van ez közel a jelenlegi szakodhoz?</item>
+        <item>Ha egy évig azt csinálhatnál, amit csak akarsz, mihez kezdenél?</item>
+        <item>Van valamihez titkos tehetséged, szeretsz például énekelni?</item>
+        <item>Ha magad választhatnád ki, mi legyen a keresztneved, hogy hívnának?</item>
+        <item>Mi volt életed legbátrabb tette?</item>
+        <item>Milyen rossz tulajdonságokat örököltél a szüleidtől?</item>
+        <item>Mi volt a legjobb tanács, amit valaha kaptál?</item>
+        <item>Mit szeretnél mindenképp elérni a jövőben?</item>
+        <item>Miről nem akarnál lemondani semmi esetre sem az életedben?</item>
+        <item>Milyen típusú embereket kedvelsz?</item>
+        <item>Mik azok a tantárgyak, témakör amiben nem vagy otthon? (vajon miért?)</item>
+        <item>Milyen zenéket szeretsz?</item>
+        <item>Van jelmondatod, történeted, ami megragadott, ami szerint próbálsz élni, cselekedni?</item>
+        <item>Mi az, amit az országban megváltoztatnál? Politika, egyéb..?</item>
+        <item>Hogyan rabolnál ki egy bankot?</item>
+        <item>Vitassátok meg, hogy néz ki egy túróstészta kalapban?</item>
+        <item>Egy lóméretű kacsával verekednél inkább, vagy 100 kacsa méretű lóval?</item>
+        <item>Hogyan alapítanál szektát?</item>
+        <item>Hány közeli barátod van?</item>
+        <item>A barátaiddal mész nyaralni, vagy a családoddal?</item>
+        <item>Miért választottad az egyetemet valamely OKJ képzés helyett?</item>
+        <item>Szeretnél külföldre költözni? Ha igen, hova?</item>
+        <item>Mi a következő dolog, amit szeretnél elérni az életedben?</item>
+        <item>Hol szeretnél lenni öt év múlva?</item>
+        <item>Mi az ami szerinted előremozdít egy barátságot?</item>
+        <item>Mi az ami számodra fontos egy barátságban?</item>
+        <item>Mi a legjobb produktivity tipp amit valaha hallottál?</item>
+        <item>Szoktál-e halogatni, ha igen miért?</item>
+        <item>Van olyan hobbi/projekt, amibe már rég szerettél volna belefogni, de mégsem tetted? ha igen, akkor vajon miért?</item>
+        <item>Milyen nyelveken beszélsz, mit szeretsz bennük?</item>
+        <item>Használsz AI-t munkához vagy a hobbidhoz?</item>
+    </string-array>
+
+    <string-array name="questions_friends">
+        <item>@string/question_1</item>
+        <item>@string/question_2</item>
+    </string-array>
+
+    <string-array name="questions_lovers">
+        <item>@string/question_1</item>
+        <item>@string/question_2</item>
+    </string-array>
+
+    <string-array name="team_building_questions">
+    <item>Melyik az a készség, amelyről úgy gondolja, hogy a munkahelyén nem használják ki eléggé?</item>
+    <item>Ha egy napig a világ bármelyik munkáját végezhetné, mi lenne az, és miért?</item>
+    <item>Melyik volt a legérdekesebb projekt, amin ennél a vállalatnál dolgozott?</item>
+    <item>Hogyan szeretsz visszajelzést kapni?</item>
+    <item>Mi az az egy dolog, amit nagyra értékel a csapatában?</item>
+    <item>Ha azonnal megtanulhatnál egy új készséget, mi lenne az?</item>
+    <item>Mi a kedvenc módja annak, hogy kikapcsolódjon egy fárasztó nap után?</item>
+    <item>Hogyan marad motivált a kihívást jelentő projektek során?</item>
+    <item>Mi az az egy dolog, amit mostanában tanultál egy munkatársadtól?</item>
+    <item>Ha bármelyik korábbi vagy jelenlegi vezetővel együtt ebédelhetne, ki lenne az, és miért?</item>.
+    <item>Mi az a dolog, amit megváltoztatnál a munkakörnyezetünkben?</item>
+    <item>Hogyan kezeli a stresszt a szoros határidők alatt?</item>
+    <item>Melyik a kedvenc csapatépítő tevékenységed, amin részt vettél?</item>
+    <item>Mi az az egy cél, amit idén szakmai fejlődéseddel kapcsolatban kitűztél magad elé?</item>
+    <item>Hogyan ünnepli meg az elért eredményeket, legyenek azok nagyok vagy kicsik?</item>
+    <item>Melyik a kedvenc termelékenységi eszköze vagy alkalmazása?</item>
+    <item>Hogyan tartja egyensúlyban a munkát és a magánéletet?</item>
+    <item>Melyik az a könyv vagy cikk, amelyik befolyásolta a munkához való hozzáállását?</item>.
+    <item>Mi a kedvenc módja a másokkal való együttműködésnek?</item>
+    <item>Hogyan kezeli a munkahelyi konfliktusokat vagy nézeteltéréseket?</item>
+    <item>Mi az az egy dolog, amiről azt kívánta volna, bárcsak tudta volna, amikor elkezdte a karrierjét?</item>.
+    <item>Hogyan rangsorolja a feladatokat, amikor minden sürgősnek tűnik?</item>.
+    <item>Mi a kedvenc része a munkádban?</item>
+    <item>Hogyan maradsz szervezett több projekt mellett?</item>
+    <item>Mi az az egy dolog, amit szívesen megtanulnál a csapattársaidtól?</item>.
+    <item>Hogyan közelíted meg a problémamegoldást csapatmunkában?</item>
+    <item>Mi a kedvenc módja annak, hogy visszaadjon a közösségnek?</item>
+    <item>Hogyan biztosítja a hatékony kommunikációt távoli munkakörnyezetben?</item>
+    <item>Mi az az egy dolog, amit csodálsz egy munkatársadban?</item>
+    <item>Hogyan tart lépést az iparági trendekkel és fejleményekkel?</item>
+    <item>Mi a kedvenc módja a napkezdésnek?</item>
+    <item>Hogyan kezeli a visszajelzést vagy a kritikát?</item>
+    <item>Mi az az egy dolog, amiről úgy gondolja, hogy a csapatunk jobban is csinálhatná?</item>
+    <item>Hogyan ösztönzi a kreativitást és az innovációt a munkájában?</item>
+    <item>Mi a kedvenc módja annak, hogy feltöltődjön a munkanap során?</item>
+    <item>Hogyan építesz bizalmat az új csapattagokkal?</item>
+    <item>Mi az az egy dolog, amit elértél a munkahelyeden, és amire büszke vagy?</item>
+    <item>Hogyan alkalmazkodik a munkahelyi változásokhoz?</item>
+    <item>Mi a kedvenc módja a csapatsikerek megünneplésére?</item>
+    <item>Hogyan biztosítja a befogadást és a sokszínűséget a csapatmegbeszélések során?</item>
+</string-array>
+
+    <string-array name="Thirtisixquestions_that_lead_to_love">
+        <item>Ha a világon bárkit választhatnál, kit hívnál meg vacsoravendégnek?</item>
+        <item>Szeretnél híres lenni? Hogyan?</item>
+        <item>Volt már olyan, hogy egy telefonbeszélgetés előtt elpróbáltad, hogy mit fogsz mondani? Miért?</item>
+        <item>Számodra miből állna egy „tökéletes” nap?</item>
+        <item>Mikor énekeltél utoljára magadnak? És mikor valaki másnak?</item>
+        <item>Ha 90 évig élhetnél, és életed utolsó 60 évére megőrizhetnéd egy 30 éves szellemi képességeit vagy testét, melyiket választanád?</item>
+        <item>Van valami titkos megérzésed arról, hogy hogyan fogsz meghalni?</item>
+        <item>Mondj három dolgot, amiről úgy tűnik, hogy közös benned és a partneredben!</item>
+        <item>Miért vagy a leghálásabb az életben?</item>
+        <item>Ha megváltoztathatnál valamit abban, hogy hogyan neveltek fel, mit változtatnál meg?</item>
+        <item>Meséld el a partnerednek életed történetét négy percben, olyan részletesen, ahogy csak belefér!</item>
+        <item>Ha választhatnál, hogy holnap reggeltől legyen egy új tulajdonságod vagy képességed, mit szeretnél?</item>
+        <item>Ha egy kristálygömbből megtudhatnád az igazságot magadról, az életedről, a jövődről vagy bármi másról, mit szeretnél tudni?</item>
+        <item>Van olyasmi, amiről régóta álmodozol már, hogy egyszer megcsinálod? Miért nem csináltad még meg?</item>
+        <item>Mi életed legnagyobb teljesítménye?</item>
+        <item>Mi a legnagyobb érték számodra egy barátságban?</item>
+        <item>Mi életed legszebb emléke?</item>
+        <item>Mi életed legrosszabb emléke?</item>
+        <item>Ha most megtudnád, hogy egy év múlva meghalsz, változtatnál valamit az életeden? Miért?</item>
+        <item>Mit jelent számodra a barátság?</item>
+        <item>Milyen szerepet játszanak az életedben a szerelem és az érzelmek?</item>
+        <item>Felváltva nevezzétek meg egy-egy jó tulajdonságát a másiknak! Összesen ötig jussatok el!</item>
+        <item>Mennyire szoros és meghitt a kapcsolatod a családoddal? Szerinted boldogabb gyerekkorod volt, mint az emberek többségének?</item>
+        <item>Milyen a kapcsolatod édesanyáddal?</item>
+        <item>Mondjatok három olyan igaz állítást, ami úgy kezdődik, hogy „mi mind a ketten...”! Példa: „mi mind a ketten úgy érezzük most, hogy...”</item>
+        <item>Fejezd be ezt a mondatot: „bár lenne valaki, akivel megoszthatnám...”!</item>
+        <item>Ha partnerednek közeli barátjává válnál, mondd el, mit kéne neki tudnia rólad!</item>
+        <item>Mondd el partnerednek, hogy mit szeretsz benne, de egészen őszintén, olyan dolgokat is felsorolva, amiket az ember nem szokott egy ismeretlennek mondani!</item>
+        <item>Meséld el a másiknak életed legkínosabb pillanatának történetét!</item>
+        <item>Mikor látott utoljára valaki sírni téged? És mikor sírtál utoljára egyedül?</item>
+        <item>Mondj valamit a partnereddel kapcsolatban, amit már most szeretsz benne!</item>
+        <item>Mi az, ami olyan komoly dolog, hogy nem szabad vele viccelni, már ha egyáltalán vannak ilyen dolgok?</item>
+        <item>Ha ma éjszaka meghalnál úgy, hogy addig már nem is kommunikálhatsz többet egyáltalán senkivel, mivel kapcsolatban sajnálnád a legjobban, hogy nem mondtad el valakinek? És miért nem mondtad el még ezt neki sosem?</item>
+        <item>Kigyullad a házad és benne minden tulajdonod. Kimentetted már a szeretteidet és háziállataidat, de már csak egyvalamiért tudsz visszarohanni, hogy kimentsd. Mi lenne az? Miért?</item>
+        <item>Családtagjaid közül kinek a halálát lenne a legnehezebb feldolgoznod? Miért?</item>
+        <item>Mondd el egy személyes problémádat, és kérd a partnered tanácsát, hogy ő hogyan oldaná meg! Aztán kérd meg a partnered, hogy azt is mondja meg, hogy szerinte benned milyen érzések lehetnek ezzel a kiválasztott problémával kapcsolatban!</item>
+    </string-array>
+
+</resources>

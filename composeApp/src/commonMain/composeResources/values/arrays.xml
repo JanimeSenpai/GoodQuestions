@@ -1,0 +1,163 @@
+<resources>
+    <string-array name="questions_university">
+        <item>If you could get a free trip, where would you go now and why?</item>
+        <item>If you could not work in any intellectual field, what non-intellectual job would you choose?</item>
+        <item>What physical accomplishment are you most proud of?</item>
+        <item>If you were to work in academia in the future, what position would you hold?</item>
+        <item>What do you consider to be your worst human trait?</item>
+        <item>What is a movie/series that is very popular but you have not seen? Why?</item>
+        <item>Which film is a must-see for you?</item>
+        <item>What hobby do you wish you had more time for?</item>
+        <item>Which family member are you closest to?</item>
+        <item>If you could have one superpower, what would it be?</item>
+        <item>What languages do you speak and want to learn?</item>
+        <item>What rule do you break often?</item>
+        <item>If you could live in any historical era, which would you choose?</item>
+        <item>If you could live in the world of a fantasy novel, which would you choose?</item>
+        <item>Would you like to be famous? How?</item>
+        <item>What would you consider to be a "perfect" weekday?</item>
+        <item>Tell me three things that you and your partner seem to have in common!</item>
+        <item>What are you most grateful for in life?</item>
+        <item>If you could change one thing about the way you were raised, what would you change?</item>
+        <item>Tell your partner the story of your life in four minutes, in as much detail as you can!</item>
+        <item>If you could learn the truth about yourself, your life, your future or anything else you'd like to know from a crystal ball</item>
+        <item>Is there something you've been dreaming of doing for a long time? Why haven't you done it yet?</item>
+        <item>What is the greatest achievement of your life?</item>
+        <item>What is the greatest value to you in a friendship?</item>
+        <item>What is your best memory of this summer?</item>
+        <item>If you knew now that you were going to die in a year, would you change anything in your life? Why?</item>
+        <item>What does friendship mean to you?</item>
+        <item>What role do love and emotions play in your life?</item>
+        <item>How close and intimate is your relationship with your family? Do you think you had a happier childhood than most people?</item>
+        <item>Complete the sentence "I wish I had someone to share..."!</item>
+        <item>If you were to become a close friend of your partner, tell me what they would need to know about you!</item>
+        <item>When was the last time someone saw you cry? And when was the last time you cried alone?</item>
+        <item>What is something so serious that it shouldn't be made fun of, if there are such things?</item>
+        <item>Your house is on fire and all your possessions in it. You've already rescued your loved ones and pets, but the only thing you can rush back to do is rescue them. What is it? Why?</item>
+        <item>How old would you be if you could choose your age now?</item>
+        <item>What would you do with the rest of your life if you didn't have to work now?</item>
+        <item>What did you want to be ten years ago? How close is this to your current profession?</item>
+        <item>If you could do whatever you wanted for a year, what would you do?</item>
+        <item>Do you have a secret talent for something, like singing?</item>
+        <item>If you could choose your own first name, what would it be?</item>
+        <item>What was the bravest thing you ever did?</item>
+        <item>What bad qualities did you inherit from your parents?</item>
+        <item>What was the best advice you ever got?</item>
+        <item>What do you want to achieve in the future?</item>
+        <item>What would you never want to give up in your life?</item>
+        <item>What type of people do you like?</item>
+        <item>What subjects or topics are you not comfortable with (why?)</item>
+        <item>What kind of music do you like?</item>
+        <item>Do you have a motto, a story that has stuck with you, that you try to live by, act by?</item>
+        <item>What is one thing you would change in the country? Politics, other...?</item>
+        <item>How would you rob a bank?</item>
+        <item>Give me a guess what a cheesecake in a hat looks like</item>
+        <item>Would you rather fight a duck the size of a horse, or a horse the size of 100 ducks?</item>
+        <item>How would you start a cult?</item>
+        <item>How many close friends do you have?</item>
+        <item>Do you go on holiday with your friends or with your family?</item>
+        <item>Why did you choose university over an OKJ course?</item>
+        <item>Would you like to move abroad? If so, where?</item>
+        <item>What is the next thing you would like to achieve in your life?</item>
+        <item>Where would you like to be in five years?</item>
+        <item>What do you think makes a friendship work?</item>
+        <item>What is important to you in a friendship?</item>
+        <item>What's the best productivity tip you've ever heard?</item>
+        <item>Do you procrastinate, if so why?</item>
+        <item>Is there a hobby/project you've wanted to do for a long time but haven't?</item>
+        <item>What languages do you speak, what do you like about them?</item>
+        <item>Do you use AI for work or hobbies?</item>
+    </string-array>
+
+    <string-array name="questions_friends">
+        <item>@string/question_1</item>
+        <item>@string/question_2</item>
+    </string-array>
+
+    <string-array name="questions_lovers">
+        <item>@string/question_1</item>
+        <item>@string/question_2</item>
+    </string-array>
+
+    <string-array name="team_building_questions">
+        <item>What is one skill you have that you think is underutilized at work?</item>
+        <item>If you could have any job in the world for one day, what would it be and why?</item>
+        <item>What is the most interesting project you’ve worked on at this company?</item>
+        <item>How do you prefer to receive feedback?</item>
+        <item>What is one thing you appreciate about your team?</item>
+        <item>If you could learn a new skill instantly, what would it be?</item>
+        <item>What is your favorite way to unwind after a busy day?</item>
+        <item>How do you stay motivated during challenging projects?</item>
+        <item>What is one thing you’ve learned from a coworker recently?</item>
+        <item>If you could have lunch with any leader, past or present, who would it be and why?</item>
+        <item>What is one thing you would change about our work environment?</item>
+        <item>How do you handle stress during tight deadlines?</item>
+        <item>What is your favorite team-building activity you’ve participated in?</item>
+        <item>What is one goal you have for your professional development this year?</item>
+        <item>How do you celebrate achievements, big or small?</item>
+        <item>What is your favorite productivity tool or app?</item>
+        <item>How do you balance work and personal life?</item>
+        <item>What is one book or article that has influenced your work approach?</item>
+        <item>What is your favorite way to collaborate with others?</item>
+        <item>How do you handle conflicts or disagreements at work?</item>
+        <item>What is one thing you wish you knew when you started your career?</item>
+        <item>How do you prioritize tasks when everything seems urgent?</item>
+        <item>What is your favorite part of your job?</item>
+        <item>How do you stay organized with multiple projects?</item>
+        <item>What is one thing you would like to learn from your team members?</item>
+        <item>How do you approach problem-solving in a team setting?</item>
+        <item>What is your favorite way to give back to the community?</item>
+        <item>How do you ensure effective communication in a remote work environment?</item>
+        <item>What is one thing you admire about a coworker?</item>
+        <item>How do you keep up with industry trends and developments?</item>
+        <item>What is your favorite way to start the day?</item>
+        <item>How do you handle feedback or criticism?</item>
+        <item>What is one thing you think our team could do better?</item>
+        <item>How do you foster creativity and innovation in your work?</item>
+        <item>What is your favorite way to recharge during the workday?</item>
+        <item>How do you build trust with new team members?</item>
+        <item>What is one thing you’ve accomplished at work that you’re proud of?</item>
+        <item>How do you adapt to changes in the workplace?</item>
+        <item>What is your favorite way to celebrate team successes?</item>
+        <item>How do you ensure inclusivity and diversity in team discussions?</item>
+    </string-array>
+
+    <string-array name="Thirtisixquestions_that_lead_to_love">
+        <item>Ha a világon bárkit választhatnál, kit hívnál meg vacsoravendégnek?</item>
+        <item>Szeretnél híres lenni? Hogyan?</item>
+        <item>Volt már olyan, hogy egy telefonbeszélgetés előtt elpróbáltad, hogy mit fogsz mondani? Miért?</item>
+        <item>Számodra miből állna egy „tökéletes” nap?</item>
+        <item>Mikor énekeltél utoljára magadnak? És mikor valaki másnak?</item>
+        <item>Ha 90 évig élhetnél, és életed utolsó 60 évére megőrizhetnéd egy 30 éves szellemi képességeit vagy testét, melyiket választanád?</item>
+        <item>Van valami titkos megérzésed arról, hogy hogyan fogsz meghalni?</item>
+        <item>Mondj három dolgot, amiről úgy tűnik, hogy közös benned és a partneredben!</item>
+        <item>Miért vagy a leghálásabb az életben?</item>
+        <item>Ha megváltoztathatnál valamit abban, hogy hogyan neveltek fel, mit változtatnál meg?</item>
+        <item>Meséld el a partnerednek életed történetét négy percben, olyan részletesen, ahogy csak belefér!</item>
+        <item>Ha választhatnál, hogy holnap reggeltől legyen egy új tulajdonságod vagy képességed, mit szeretnél?</item>
+        <item>Ha egy kristálygömbből megtudhatnád az igazságot magadról, az életedről, a jövődről vagy bármi másról, mit szeretnél tudni?</item>
+        <item>Van olyasmi, amiről régóta álmodozol már, hogy egyszer megcsinálod? Miért nem csináltad még meg?</item>
+        <item>Mi életed legnagyobb teljesítménye?</item>
+        <item>Mi a legnagyobb érték számodra egy barátságban?</item>
+        <item>Mi életed legszebb emléke?</item>
+        <item>Mi életed legrosszabb emléke?</item>
+        <item>Ha most megtudnád, hogy egy év múlva meghalsz, változtatnál valamit az életeden? Miért?</item>
+        <item>Mit jelent számodra a barátság?</item>
+        <item>Milyen szerepet játszanak az életedben a szerelem és az érzelmek?</item>
+        <item>Felváltva nevezzétek meg egy-egy jó tulajdonságát a másiknak! Összesen ötig jussatok el!</item>
+        <item>Mennyire szoros és meghitt a kapcsolatod a családoddal? Szerinted boldogabb gyerekkorod volt, mint az emberek többségének?</item>
+        <item>Milyen a kapcsolatod édesanyáddal?</item>
+        <item>Mondjatok három olyan igaz állítást, ami úgy kezdődik, hogy „mi mind a ketten...”! Példa: „mi mind a ketten úgy érezzük most, hogy...”</item>
+        <item>Fejezd be ezt a mondatot: „bár lenne valaki, akivel megoszthatnám...”!</item>
+        <item>Ha partnerednek közeli barátjává válnál, mondd el, mit kéne neki tudnia rólad!</item>
+        <item>Mondd el partnerednek, hogy mit szeretsz benne, de egészen őszintén, olyan dolgokat is felsorolva, amiket az ember nem szokott egy ismeretlennek mondani!</item>
+        <item>Meséld el a másiknak életed legkínosabb pillanatának történetét!</item>
+        <item>Mikor látott utoljára valaki sírni téged? És mikor sírtál utoljára egyedül?</item>
+        <item>Mondj valamit a partnereddel kapcsolatban, amit már most szeretsz benne!</item>
+        <item>Mi az, ami olyan komoly dolog, hogy nem szabad vele viccelni, már ha egyáltalán vannak ilyen dolgok?</item>
+        <item>Ha ma éjszaka meghalnál úgy, hogy addig már nem is kommunikálhatsz többet egyáltalán senkivel, mivel kapcsolatban sajnálnád a legjobban, hogy nem mondtad el valakinek? És miért nem mondtad el még ezt neki sosem?</item>
+        <item>Kigyullad a házad és benne minden tulajdonod. Kimentetted már a szeretteidet és háziállataidat, de már csak egyvalamiért tudsz visszarohanni, hogy kimentsd. Mi lenne az? Miért?</item>
+        <item>Családtagjaid közül kinek a halálát lenne a legnehezebb feldolgoznod? Miért?</item>
+        <item>Mondd el egy személyes problémádat, és kérd a partnered tanácsát, hogy ő hogyan oldaná meg! Aztán kérd meg a partnered, hogy azt is mondja meg, hogy szerinte benned milyen érzések lehetnek ezzel a kiválasztott problémával kapcsolatban!</item>
+    </string-array>
+</resources>
