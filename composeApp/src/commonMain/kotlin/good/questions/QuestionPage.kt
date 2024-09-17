@@ -41,6 +41,9 @@ fun QuestionsPage(
 
     val questions = remember { mutableStateOf<List<String>>(emptyList()) }
     val viewModel: QuestionsViewModel = remember { QuestionsViewModel(questions.value) }
+
+
+
     val currentQuestion = rememberSaveable { mutableStateOf(viewModel.getNextQuestion(isRandom, isLoopEnabled)) }
     val isEndOfList by viewModel.endOfQuestionList.collectAsState()
 
@@ -186,7 +189,7 @@ suspend fun getQuestionsForAudience(audience: String): List<String> {
     return when (audience) {
         "University Students" ->getStringArray(Res.array.questions_university)
         "Close Friends" ->getStringArray(Res.array.questions_friends)
-        "Lovers" -> getStringArray(Res.array.questions_lovers)
+        "Couples" -> getStringArray(Res.array.questions_lovers)
         "Coworkers" -> getStringArray(Res.array.team_building_questions)
         "The 36 Questions That Lead to Love" -> getStringArray(Res.array.Thirtisixquestions_that_lead_to_love)
         else -> listOf("There should have been an audience selected!")

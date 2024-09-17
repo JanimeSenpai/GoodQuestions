@@ -41,7 +41,11 @@ class QuestionsViewModel(
         } else {
             if (isLoopEnabled) {
                 resetForLooping()
-                return getNextQuestion(isRandom, isLoopEnabled)
+                return if (_remainingQuestions.value.isNotEmpty()) {
+                    getNextQuestion(isRandom, isLoopEnabled)
+                } else {
+                    "No questions available after reset"
+                }
             } else {
                 _endOfQuestionList.value = true
                 return "We reached the end of the question list"

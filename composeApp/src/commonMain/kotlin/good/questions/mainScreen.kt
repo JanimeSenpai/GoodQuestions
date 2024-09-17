@@ -33,25 +33,46 @@ fun MainScreen(
         "Coworkers",
         "The 36 Questions That Lead to Love",
     )
-
+    var selectedAudience by rememberSaveable { mutableStateOf<String?>(null) }
+    var isMixEnabled by rememberSaveable { mutableStateOf(false) }
+    var isLoopEnabled by rememberSaveable { mutableStateOf(false) }
     Column(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
+        modifier = Modifier.fillMaxSize().padding(6.dp),
+        verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        audiences.chunked(2).forEach { rowItems ->
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
-            ) {
-                rowItems.forEach { audience ->
-                    AudienceSurface(
-                        audience = audience,
-                        onPlayClick = onPlayClick
-                    )
+        Column(
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            audiences.chunked(2).forEach { rowItems ->
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    rowItems.forEach { audience ->
+                        AudienceSurface(
+                            audience = audience,
+                            isSelected = selectedAudience == audience,
+                            onSelect = { selectedAudience = audience }
+                        )
+                    }
                 }
             }
         }
+        ControlButtons(
+            selectedAudience = selectedAudience,
+            isMixEnabled = isMixEnabled,
+            isLoopEnabled = isLoopEnabled,
+            onMixToggle = { isMixEnabled = !isMixEnabled },
+            onLoopToggle = { isLoopEnabled = !isLoopEnabled },
+            onPlayClick = {
+                selectedAudience?.let { audience ->
+                    onPlayClick(audience, isMixEnabled, isLoopEnabled)
+                }
+            }
+        )
         Image(
             painter = painterResource(Res.drawable.BuyMeACoffee),
             contentDescription = "Buy Me a Coffee",
@@ -67,59 +88,75 @@ fun MainScreen(
 @Composable
 fun AudienceSurface(
     audience: String,
-    onPlayClick: (String, Boolean, Boolean) -> Unit
+    isSelected: Boolean,
+    onSelect: () -> Unit
 ) {
-    var isMixEnabled by rememberSaveable { mutableStateOf(false) }
-    var isLoopEnabled by rememberSaveable { mutableStateOf(false) }
-
     Surface(
         modifier = Modifier
             .padding(8.dp)
-            .size(180.dp),
+            .size(160.dp)
+            .clickable { onSelect() },
         shape = MaterialTheme.shapes.medium,
-        color = MaterialTheme.colorScheme.primaryContainer
+        color = if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.primaryContainer
     ) {
-        Column(
-            modifier = Modifier.padding(16.dp),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier.fillMaxSize()
         ) {
-            Text(text = audience, style = MaterialTheme.typography.headlineSmall, textAlign = TextAlign.Center)
-
-          Row  {// Play Button
-                IconButton(onClick = {
-                    onPlayClick(audience, isMixEnabled, isLoopEnabled)
-                }) {
-                    Icon(Icons.Default.PlayArrow, contentDescription = "Play")
-                }
-
-                // Mix Toggle Button
-                IconButton(onClick = {
-                    isMixEnabled = !isMixEnabled
-                }) {
-                    Icon(
-                        if (isMixEnabled) painterResource(Res.drawable.shuffleIcon_on) else painterResource(
-                            Res.drawable.shuffleIcon
-                        ),
-                        contentDescription = "Mix"
-                    )
-                }
-
-                // Loop Toggle Button
-                IconButton(onClick = {
-                    isLoopEnabled = !isLoopEnabled
-                }) {
-                    Icon(
-                        if (isLoopEnabled) painterResource(Res.drawable.repeat_on) else painterResource(
-                            Res.drawable.repeat
-                        ),
-                        contentDescription = "Loop"
-                    )
-                }
+            Text(
+                text = audience,
+                style = MaterialTheme.typography.headlineSmall,
+                textAlign = TextAlign.Center
+            )
+        }
+    }
+}
+@Composable
+fun ControlButtons(
+    selectedAudience: String?,
+    isMixEnabled: Boolean,
+    isLoopEnabled: Boolean,
+    onMixToggle: () -> Unit,
+    onLoopToggle: () -> Unit,
+    onPlayClick: () -> Unit
+) {
+    Surface(
+        modifier = Modifier.fillMaxWidth(),
+        color = MaterialTheme.colorScheme.surface,
+        tonalElevation = 8.dp,
+        shape = MaterialTheme.shapes.medium
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            IconButton(onClick = onMixToggle) {
+                Icon(
+                    painter = if (isMixEnabled) painterResource(Res.drawable.shuffleIcon_on) else painterResource(
+                        Res.drawable.shuffleIcon
+                    ),
+                    contentDescription = "Mix"
+                )
             }
 
+            IconButton(onClick = onLoopToggle) {
+                Icon(
+                    painter = if (isLoopEnabled) painterResource(Res.drawable.repeat_on) else painterResource(
+                        Res.drawable.repeat
+                    ),
+                    contentDescription = "Loop"
+                )
+            }
 
+            IconButton(
+                onClick = onPlayClick,
+                enabled = selectedAudience != null
+            ) {
+                Icon(Icons.Default.PlayArrow, contentDescription = "Play")
+            }
         }
-
     }
 }
