@@ -15,61 +15,60 @@ class QuestionsViewModel(
     private val _askedQuestions = MutableStateFlow(mutableListOf<String>())
     val askedQuestions: StateFlow<List<String>> = _askedQuestions.asStateFlow()
 
-    private val _currentQuestionIndex = MutableStateFlow(0)
-    val currentQuestionIndex: StateFlow<Int> = _currentQuestionIndex.asStateFlow()
-
     private val _currentQuestion = MutableStateFlow("")//todo itt folytatni
     val currentQuestion: StateFlow<String> = _currentQuestion.asStateFlow()
 
     private val _endOfQuestionList = MutableStateFlow(false)
     val endOfQuestionList: StateFlow<Boolean> = _endOfQuestionList.asStateFlow()
 
-    private val _firstback = MutableStateFlow(false)
-    val firstback: StateFlow<Boolean> = _firstback.asStateFlow()
 
 
 
-    fun onBackClick(currentQ: String):String{
-        var lastAskedQuestion: String = currentQuestion.value
-        if (_askedQuestions.value.size>=2&&firstback.value) {
-             lastAskedQuestion = _askedQuestions.value.removeLast()
-            _remainingQuestions.value = _remainingQuestions.value.toMutableList().apply { add(0, lastAskedQuestion) }
-            lastAskedQuestion = _askedQuestions.value.removeLast()
-            _remainingQuestions.value = _remainingQuestions.value.toMutableList().apply { add(0, lastAskedQuestion) }
-            _currentQuestionIndex.value =0// questions.indexOf(lastAskedQuestion)
-            _firstback.value=false
-        }else{
-            if(_askedQuestions.value.size>=2) {//asked questions contains the current question and must contain another one to go back to
-                lastAskedQuestion = _askedQuestions.value.removeLast()
-                _remainingQuestions.value =
-                    _remainingQuestions.value.toMutableList().apply { add(0, lastAskedQuestion) }
-                _currentQuestionIndex.value =0// questions.indexOf(lastAskedQuestion)
+
+    fun onBackClick(): String {
+        if (_askedQuestions.value.isNotEmpty()) {
+            // Add the current question back to the remaining questions
+            _remainingQuestions.value = _remainingQuestions.value.toMutableList().apply {
+                add(0, _currentQuestion.value)
             }
 
+            // Get the last asked question and set it as the current question
+            val lastAskedQuestion = _askedQuestions.value.removeLast()
+            _currentQuestion.value = lastAskedQuestion
 
+            return lastAskedQuestion
         }
-     return   lastAskedQuestion
+        return "No previous question"
     }
 
-    fun onNextClick(isRandom: Boolean, isLoopEnabled: Boolean) :String{
-        _firstback.value=true
+    fun onNextClick(isRandom: Boolean, isLoopEnabled: Boolean): String {
         if (_remainingQuestions.value.isNotEmpty()) {
+            // Add the current question to the asked questions
+            if (_currentQuestion.value.isNotEmpty()) {
+                _askedQuestions.value = _askedQuestions.value.toMutableList().apply {
+                    add(_currentQuestion.value)
+                }
+            }
+
+            // Get the next question
             val nextIndex = if (isRandom) {
                 _remainingQuestions.value.indices.random()
             } else {
-                _currentQuestionIndex.value
+                0 // Always take the first question in non-random mode
             }
 
             val nextQuestion = _remainingQuestions.value[nextIndex]
-            _remainingQuestions.value = _remainingQuestions.value.toMutableList().apply { removeAt(nextIndex) }
-            _askedQuestions.value = _askedQuestions.value.toMutableList().apply { add(nextQuestion) }
+            _remainingQuestions.value = _remainingQuestions.value.toMutableList().apply {
+                removeAt(nextIndex)
+            }
 
-            _currentQuestionIndex.value = nextIndex
+            // Update the current question
+            _currentQuestion.value = nextQuestion
+
             return nextQuestion
-
         } else {
             if (isLoopEnabled) {
-                resetForLooping(true)//deprecated
+                resetForLooping(preserveLastQuestion = true)
                 return if (_remainingQuestions.value.isNotEmpty()) {
                     onNextClick(isRandom, isLoopEnabled)
                 } else {

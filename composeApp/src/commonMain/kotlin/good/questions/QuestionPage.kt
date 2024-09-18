@@ -41,13 +41,13 @@ fun QuestionsPage(
 
 
 
-    val currentQuestion = rememberSaveable { mutableStateOf(viewModel.onNextClick(isRandom, isLoopEnabled)) }
+    val currentQuestion = rememberSaveable { mutableStateOf(viewModel.currentQuestion) }
     val isEndOfList by viewModel.endOfQuestionList.collectAsState()
 
     LaunchedEffect(audience) {
         questions.value = getQuestionsForAudience(audience)
         viewModel.importQuestions(questions.value)
-        currentQuestion.value = viewModel.onNextClick(isRandom, isLoopEnabled)
+        viewModel.onNextClick(isRandom, isLoopEnabled)
     }
 
     Column(
@@ -55,8 +55,9 @@ fun QuestionsPage(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        QuestionControls({ currentQuestion.value = viewModel.onBackClick(currentQuestion.value) },
-            {  currentQuestion.value =viewModel.onNextClick(isRandom, isLoopEnabled) },  currentQuestion.value)
+        QuestionControls({ viewModel.onBackClick() },
+            {  viewModel.onNextClick(isRandom, isLoopEnabled) }, currentQuestion.value.toString()
+        )
 
        // Stopwatch(currentQuestion.value)
 
@@ -74,7 +75,7 @@ fun QuestionsPage(
             ) {
                 Text(text = audience, style = MaterialTheme.typography.headlineSmall)
                 Spacer(modifier = Modifier.height(16.dp))
-                Text(text = currentQuestion.value, style = MaterialTheme.typography.headlineLarge)
+                Text(text = currentQuestion.value.toString(), style = MaterialTheme.typography.headlineLarge)
                 Spacer(modifier = Modifier.height(16.dp))
             }
 
