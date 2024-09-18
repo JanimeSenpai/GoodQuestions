@@ -82,7 +82,8 @@
         <item>@string/question_5</item>
         <item>@string/question_6</item>
         <item>@string/question_7</item>
-        <item>@string/question_8</item>
+        <item>@string/question_8 This is a very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long question</item>
+
     </string-array>
 
     <string-array name="team_building_questions">

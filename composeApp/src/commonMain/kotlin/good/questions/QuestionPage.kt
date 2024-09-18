@@ -1,18 +1,21 @@
 package good.questions
 
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.scaleIn
 import androidx.compose.animation.scaleOut
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -30,18 +33,14 @@ import org.jetbrains.compose.resources.painterResource
 
 @Composable
 fun QuestionsPage(
-    audience: String,
-    isRandom: Boolean,
-    isLoopEnabled: Boolean,
-    navController: NavHostController
+    audience: String, isRandom: Boolean, isLoopEnabled: Boolean, navController: NavHostController
 ) {
 
     val questions = remember { mutableStateOf<List<String>>(emptyList()) }
     val viewModel: QuestionsViewModel = remember { QuestionsViewModel(questions.value) }
 
 
-
-    val currentQuestion = rememberSaveable { mutableStateOf(viewModel.currentQuestion) }
+    val currentQuestion by viewModel.currentQuestion.collectAsState()
     val isEndOfList by viewModel.endOfQuestionList.collectAsState()
 
     LaunchedEffect(audience) {
@@ -51,57 +50,54 @@ fun QuestionsPage(
     }
 
     Column(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
+        modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp, vertical = 32.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        QuestionControls({ viewModel.onBackClick() },
-            {  viewModel.onNextClick(isRandom, isLoopEnabled) }, currentQuestion.value.toString()
+        QuestionControls(
+            { viewModel.onBackClick() },
+            { viewModel.onNextClick(isRandom, isLoopEnabled) },
+            currentQuestion = currentQuestion,
+            isEndOfList
         )
+        Spacer(modifier = Modifier.height(16.dp)) // Add some space between controls and content
 
-       // Stopwatch(currentQuestion.value)
-
-
-        Surface(
-            color = MaterialTheme.colorScheme.primaryContainer,
-            shape = Shapes().large,
-            //modifier = Modifier.sizeIn(minWidth =300.dp , minHeight =300.dp )
+        Box(
+            modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center
         ) {
-
-            Column(
-                Modifier.padding(20.dp),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
+            Surface(
+                color = MaterialTheme.colorScheme.primaryContainer,
+                shape = Shapes().large,
+                modifier = Modifier.animateContentSize().wrapContentSize()
             ) {
-                Text(text = audience, style = MaterialTheme.typography.headlineSmall)
-                Spacer(modifier = Modifier.height(16.dp))
-                Text(text = currentQuestion.value.toString(), style = MaterialTheme.typography.headlineLarge)
-                Spacer(modifier = Modifier.height(16.dp))
+
+                Column(
+                    Modifier.padding(16.dp).verticalScroll(rememberScrollState()),
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Text(text = audience, style = MaterialTheme.typography.headlineSmall)
+                    Spacer(modifier = Modifier.height(16.dp))
+                    Text(
+                        text =
+
+                        if (isEndOfList) {
+                            "We reached the end of the question list"
+                        } else currentQuestion, style = MaterialTheme.typography.headlineLarge
+                    )
+                    Spacer(modifier = Modifier.height(16.dp))
+                }
             }
 
-
-
-        }
-
-      /*  AnimatedVisibility(!isEndOfList){
-            Button(onClick = {
-                currentQuestion.value = viewModel.getNextQuestion(isRandom, isLoopEnabled)
-            }) {
-                Text("Next Question")
-            }
-        }*/
-
-
-        if (isEndOfList) {
-            FloatingActionButton(
-                onClick = { navController.navigate("main") },
-                modifier = Modifier.padding(16.dp)
-            ) {
-                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back to Main")
+            if (isEndOfList) {
+                FloatingActionButton(
+                    onClick = { navController.navigate("main") }, modifier = Modifier.padding(16.dp)
+                ) {
+                    Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back to Main")
+                }
             }
         }
     }
-
 
 }
 
@@ -127,54 +123,75 @@ fun QuestionsPage(
     return questions
 }*/
 @Composable
-fun Stopwatch(currentQuestion: String) {
+fun Stopwatch(currentQuestion: String, isEndOfList: Boolean) {
     var timeInSeconds by remember { mutableStateOf(0) }
     var isRunning by remember { mutableStateOf(true) }
     var isCollapsed by remember { mutableStateOf(false) }
+    var totalTimeInSeconds by remember { mutableStateOf(0) }
 
-    LaunchedEffect(isRunning) {
-        while (isRunning) {
+    LaunchedEffect(isRunning, isEndOfList) {
+        while (isRunning && !isEndOfList) {
             delay(1000L)
             timeInSeconds++
+            totalTimeInSeconds++
+
         }
     }
+
     LaunchedEffect(currentQuestion) {
         timeInSeconds = 0
         isRunning = true
     }
-
+    LaunchedEffect(isEndOfList) {
+        if (isEndOfList) {
+            isRunning = false
+        }
+    }
     val minutes = timeInSeconds / 60
     val seconds = timeInSeconds % 60
 
+    val totalMinutes = totalTimeInSeconds / 60
+    val totalSeconds = totalTimeInSeconds % 60
     Column(
-        modifier = Modifier
-            .padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
+        modifier = Modifier.padding(16.dp), horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        AnimatedVisibility(visible = !isCollapsed,
-            enter= fadeIn() + scaleIn(),
-            exit = fadeOut() + scaleOut()
+        AnimatedVisibility(
+            visible = !isCollapsed, enter = fadeIn() + scaleIn(), exit = fadeOut() + scaleOut()
         ) {
             Surface(
-                modifier = Modifier
-                    .size(100.dp)
+                modifier = Modifier.width(150.dp) // Set width for rectangle
+                    .height(60.dp) // Set height for rectangle
                     .clickable { isCollapsed = true },
-                shape = MaterialTheme.shapes.small,
+                tonalElevation = 4.dp,
+                shadowElevation = 4.dp,
+                shape = RoundedCornerShape(32.dp),
                 color = MaterialTheme.colorScheme.primary
             ) {
                 Box(contentAlignment = Alignment.Center) {
-                    Text(
-                        text =  "${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}",
+                    if (!isEndOfList) Text(
+                        text = "${minutes.toString().padStart(2, '0')}:${
+                            seconds.toString().padStart(2, '0')
+                        }",
                         style = MaterialTheme.typography.headlineSmall,
                         color = MaterialTheme.colorScheme.onPrimary
                     )
+
+                    if (isEndOfList) {
+                        Text(
+                            text = "${
+                                totalMinutes.toString().padStart(2, '0')
+                            }:${totalSeconds.toString().padStart(2, '0')}",
+                            style = MaterialTheme.typography.headlineLarge,
+                            color = MaterialTheme.colorScheme.onPrimary
+                        )
+                    }
                 }
             }
         }
 
-        AnimatedVisibility(visible = isCollapsed,
-            enter= fadeIn() + scaleIn(),
-            exit = fadeOut() + scaleOut()) {
+        AnimatedVisibility(
+            visible = isCollapsed, enter = fadeIn() + scaleIn(), exit = fadeOut() + scaleOut()
+        ) {
             IconButton(onClick = { isCollapsed = false }) {
                 Icon(
                     painterResource(Res.drawable.timer),
@@ -188,42 +205,43 @@ fun Stopwatch(currentQuestion: String) {
 
 @Composable
 fun QuestionControls(
-    onBackClick: () -> Unit,
-    onNextClick: () -> Unit,
-    currentQuestion: String
+    onBackClick: () -> Unit, onNextClick: () -> Unit, currentQuestion: String, isEndOfList: Boolean
 ) {
     Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp),
-        horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier.fillMaxWidth().padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically
     ) {
         // Back Button
-        IconButton(onClick = onBackClick) {
-            Icon(
-                imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                contentDescription = "Back"
-            )
+
+        AnimatedVisibility(!isEndOfList) {
+            IconButton(onClick = onBackClick) {
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back"
+                )
+            }
         }
+
 
         // Stopwatch (Placeholder for actual stopwatch implementation)
-       Stopwatch(currentQuestion)
+        Stopwatch(currentQuestion, isEndOfList)
 
-        // Next Button
-        IconButton(onClick = onNextClick) {
-            Icon(
-                imageVector = Icons.AutoMirrored.Filled.ArrowForward,
-                contentDescription = "Next"
-            )
+        AnimatedVisibility(!isEndOfList) {
+            IconButton(onClick = onNextClick) {
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+                    contentDescription = "Next"
+                )
+            }
         }
+
     }
 }
 
 suspend fun getQuestionsForAudience(audience: String): List<String> {
     return when (audience) {
-        "University Students" ->getStringArray(Res.array.questions_university)
-        "Close Friends" ->getStringArray(Res.array.questions_friends)
+        "University Students" -> getStringArray(Res.array.questions_university)
+        "Close Friends" -> getStringArray(Res.array.questions_friends)
         "Couples" -> getStringArray(Res.array.questions_lovers)
         "Coworkers" -> getStringArray(Res.array.team_building_questions)
         "The 36 Questions That Lead to Love" -> getStringArray(Res.array.Thirtisixquestions_that_lead_to_love)

@@ -1,5 +1,6 @@
 package good.questions
 
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -91,13 +92,16 @@ fun AudienceSurface(
     isSelected: Boolean,
     onSelect: () -> Unit
 ) {
+    val targetColor = if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.primaryContainer
+    val animatedColor by animateColorAsState(targetColor)
+
     Surface(
         modifier = Modifier
             .padding(8.dp)
             .size(160.dp)
             .clickable { onSelect() },
         shape = MaterialTheme.shapes.medium,
-        color = if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.primaryContainer
+        color = animatedColor
     ) {
         Box(
             contentAlignment = Alignment.Center,
