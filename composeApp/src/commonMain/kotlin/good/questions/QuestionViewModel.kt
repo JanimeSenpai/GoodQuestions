@@ -18,14 +18,16 @@ class QuestionsViewModel(
     private val _currentQuestionIndex = MutableStateFlow(0)
     val currentQuestionIndex: StateFlow<Int> = _currentQuestionIndex.asStateFlow()
 
+    private val _currentQuestion = MutableStateFlow("")//todo itt folytatni
+    val currentQuestion: StateFlow<String> = _currentQuestion.asStateFlow()
+
     private val _endOfQuestionList = MutableStateFlow(false)
     val endOfQuestionList: StateFlow<Boolean> = _endOfQuestionList.asStateFlow()
 
     private val _firstback = MutableStateFlow(false)
     val firstback: StateFlow<Boolean> = _firstback.asStateFlow()
 
-    private val _currentQuestion = MutableStateFlow("")//todo itt folytatni
-    val currentQuestion: StateFlow<String> = _currentQuestion.asStateFlow()
+
 
     fun onBackClick(currentQ: String):String{
         var lastAskedQuestion: String = currentQuestion.value
