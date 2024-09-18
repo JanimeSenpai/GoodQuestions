@@ -77,6 +77,12 @@
     <string-array name="questions_lovers">
         <item>@string/question_1</item>
         <item>@string/question_2</item>
+        <item>@string/question_3</item>
+        <item>@string/question_4</item>
+        <item>@string/question_5</item>
+        <item>@string/question_6</item>
+        <item>@string/question_7</item>
+        <item>@string/question_8</item>
     </string-array>
 
     <string-array name="team_building_questions">
