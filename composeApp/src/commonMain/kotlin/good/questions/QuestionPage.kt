@@ -49,57 +49,70 @@ fun QuestionsPage(
         viewModel.onNextClick(isRandom, isLoopEnabled)
     }
 
-    Column(
-        modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp, vertical = 32.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        QuestionControls(
-            { viewModel.onBackClick() },
-            { viewModel.onNextClick(isRandom, isLoopEnabled) },
-            currentQuestion = currentQuestion,
-            isEndOfList
-        )
-        Spacer(modifier = Modifier.height(16.dp)) // Add some space between controls and content
-
-        Box(
-            modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center
-        ) {
-            Surface(
-                color = MaterialTheme.colorScheme.primaryContainer,
-                shape = Shapes().large,
-                modifier = Modifier.animateContentSize().wrapContentSize()
-            ) {
-
-                Column(
-                    Modifier.padding(16.dp).verticalScroll(rememberScrollState()),
-                    verticalArrangement = Arrangement.Center,
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    Text(text = audience, style = MaterialTheme.typography.headlineSmall)
-                    Spacer(modifier = Modifier.height(16.dp))
-                    Text(
-                        text =
-
-                        if (isEndOfList) {
-                            "We reached the end of the question list"
-                        } else currentQuestion, style = MaterialTheme.typography.headlineLarge
-                    )
-                    Spacer(modifier = Modifier.height(16.dp))
-                }
-            }
-
+    Scaffold(
+        floatingActionButton = {
             if (isEndOfList) {
                 FloatingActionButton(
-                    onClick = { navController.navigate("main") }, modifier = Modifier.padding(16.dp)
+                    onClick = { navController.navigate("main") },
+                    modifier = Modifier.padding(16.dp)
                 ) {
                     Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back to Main")
                 }
             }
-        }
-    }
+        },
+        floatingActionButtonPosition = FabPosition.Center, // Position the FAB at the center bottom
+        content = { paddingValues ->
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(paddingValues)
+                    .padding(horizontal = 16.dp, vertical = 32.dp),
+                verticalArrangement = Arrangement.Top,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                QuestionControls(
+                    onBackClick = { viewModel.onBackClick() },
+                    onNextClick = { viewModel.onNextClick(isRandom, isLoopEnabled) },
+                    currentQuestion = currentQuestion,
+                    isEndOfList = isEndOfList
+                )
 
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Surface(
+                        color = MaterialTheme.colorScheme.primaryContainer,
+                        shape = Shapes().large,
+                        modifier = Modifier
+                            .animateContentSize()
+                            .wrapContentSize()
+                    ) {
+                        Column(
+                            Modifier
+                                .padding(16.dp)
+                                .verticalScroll(rememberScrollState()),
+                            verticalArrangement = Arrangement.Center,
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            Text(text = audience, style = MaterialTheme.typography.headlineSmall)
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(
+                                text = if (isEndOfList) {
+                                    "We reached the end of the question list"
+                                } else currentQuestion,
+                                style = MaterialTheme.typography.headlineLarge
+                            )
+                            Spacer(modifier = Modifier.height(16.dp))
+                        }
+                    }
+                }
+            }
+        }
+    )
 }
+
+
 
 
 /*fun getQuestionsForAudienceB( audience: String): List<String> {
