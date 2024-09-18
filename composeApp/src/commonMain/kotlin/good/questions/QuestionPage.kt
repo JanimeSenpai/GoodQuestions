@@ -5,12 +5,11 @@ import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.scaleIn
 import androidx.compose.animation.scaleOut
-import androidx.compose.animation.shrinkVertically
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -18,7 +17,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import goodquestions.composeapp.generated.resources.BuyMeACoffee
 import goodquestions.composeapp.generated.resources.Res
 import goodquestions.composeapp.generated.resources.Thirtisixquestions_that_lead_to_love
 import goodquestions.composeapp.generated.resources.questions_friends
@@ -29,7 +27,6 @@ import goodquestions.composeapp.generated.resources.timer
 import kotlinx.coroutines.delay
 import org.jetbrains.compose.resources.getStringArray
 import org.jetbrains.compose.resources.painterResource
-import org.jetbrains.compose.resources.stringArrayResource
 
 @Composable
 fun QuestionsPage(
@@ -44,13 +41,13 @@ fun QuestionsPage(
 
 
 
-    val currentQuestion = rememberSaveable { mutableStateOf(viewModel.getNextQuestion(isRandom, isLoopEnabled)) }
+    val currentQuestion = rememberSaveable { mutableStateOf(viewModel.onNextClick(isRandom, isLoopEnabled)) }
     val isEndOfList by viewModel.endOfQuestionList.collectAsState()
 
     LaunchedEffect(audience) {
         questions.value = getQuestionsForAudience(audience)
         viewModel.importQuestions(questions.value)
-        currentQuestion.value = viewModel.getNextQuestion(isRandom, isLoopEnabled)
+        currentQuestion.value = viewModel.onNextClick(isRandom, isLoopEnabled)
     }
 
     Column(
@@ -58,7 +55,11 @@ fun QuestionsPage(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Stopwatch(currentQuestion.value)
+        QuestionControls({ currentQuestion.value = viewModel.onBackClick(currentQuestion.value) },
+            {  currentQuestion.value =viewModel.onNextClick(isRandom, isLoopEnabled) },  currentQuestion.value)
+
+       // Stopwatch(currentQuestion.value)
+
 
         Surface(
             color = MaterialTheme.colorScheme.primaryContainer,
@@ -81,13 +82,13 @@ fun QuestionsPage(
 
         }
 
-        AnimatedVisibility(!isEndOfList){
+      /*  AnimatedVisibility(!isEndOfList){
             Button(onClick = {
                 currentQuestion.value = viewModel.getNextQuestion(isRandom, isLoopEnabled)
             }) {
                 Text("Next Question")
             }
-        }
+        }*/
 
 
         if (isEndOfList) {
@@ -146,7 +147,6 @@ fun Stopwatch(currentQuestion: String) {
 
     Column(
         modifier = Modifier
-            .fillMaxWidth()
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -158,7 +158,7 @@ fun Stopwatch(currentQuestion: String) {
                 modifier = Modifier
                     .size(100.dp)
                     .clickable { isCollapsed = true },
-                shape = MaterialTheme.shapes.medium,
+                shape = MaterialTheme.shapes.small,
                 color = MaterialTheme.colorScheme.primary
             ) {
                 Box(contentAlignment = Alignment.Center) {
@@ -181,6 +181,40 @@ fun Stopwatch(currentQuestion: String) {
                     tint = MaterialTheme.colorScheme.primary
                 )
             }
+        }
+    }
+}
+
+@Composable
+fun QuestionControls(
+    onBackClick: () -> Unit,
+    onNextClick: () -> Unit,
+    currentQuestion: String
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        // Back Button
+        IconButton(onClick = onBackClick) {
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                contentDescription = "Back"
+            )
+        }
+
+        // Stopwatch (Placeholder for actual stopwatch implementation)
+       Stopwatch(currentQuestion)
+
+        // Next Button
+        IconButton(onClick = onNextClick) {
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+                contentDescription = "Next"
+            )
         }
     }
 }
