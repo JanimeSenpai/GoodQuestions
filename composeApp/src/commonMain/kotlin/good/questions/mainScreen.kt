@@ -3,7 +3,10 @@ package good.questions
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material3.*
@@ -31,11 +34,11 @@ fun MainScreen(
         "University Students",
         "Getting acquainted",
         "Friends",
-      //  "Close Friends",
+        "Close Friends",
         "Coworkers",
         "Recap: Long time no see",
         "Speed dating",
-        //"First date",
+        "First date",
         "Couples",
         "The 36 Questions That Lead to Love",
     )
@@ -48,7 +51,7 @@ fun MainScreen(
         val totalItemWidth = itemWidth + spacing
 
         // Calculate how many items fit in the available width
-        val itemsPerRow = (maxWidth / totalItemWidth).toInt().coerceAtLeast(1)
+        val itemsPerRow = (maxWidth / totalItemWidth).toInt().coerceIn(1,6)
 
         Column(
             modifier = Modifier.fillMaxSize().padding(6.dp),
@@ -56,14 +59,14 @@ fun MainScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Column(
-                modifier = Modifier.weight(1f),
+                modifier = Modifier.weight(1f).verticalScroll(rememberScrollState()),//todo görgetés helyett jobb lenne egy lapozós megoldás
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 audiences.chunked(itemsPerRow).forEach { rowItems ->
                     Row(
                         modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceEvenly
+                        horizontalArrangement = Arrangement.Center
                     ) {
                         rowItems.forEach { audience ->
                             AudienceSurface(
@@ -142,14 +145,14 @@ fun ControlButtons(
     onPlayClick: () -> Unit
 ) {
     Surface(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier .wrapContentWidth(),
         color = MaterialTheme.colorScheme.surface,
         tonalElevation = 8.dp,
         shape = MaterialTheme.shapes.medium
     ) {
         Row(
             modifier = Modifier
-                .fillMaxWidth()
+
                 .padding(16.dp),
             horizontalArrangement = Arrangement.SpaceEvenly,
             verticalAlignment = Alignment.CenterVertically
@@ -162,7 +165,7 @@ fun ControlButtons(
                     contentDescription = "Mix"
                 )
             }
-
+            Spacer(modifier =Modifier.width(16.dp))
             IconButton(onClick = onLoopToggle) {
                 Icon(
                     painter = if (isLoopEnabled) painterResource(Res.drawable.repeat_on) else painterResource(
@@ -171,6 +174,7 @@ fun ControlButtons(
                     contentDescription = "Loop"
                 )
             }
+            Spacer(modifier =Modifier.width(16.dp))
 
             IconButton(
                 onClick = onPlayClick,
