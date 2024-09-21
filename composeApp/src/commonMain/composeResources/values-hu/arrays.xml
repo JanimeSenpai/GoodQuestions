@@ -70,19 +70,121 @@
     </string-array>
 
     <string-array name="questions_friends">
-        <item>@string/question_1</item>
-        <item>@string/question_2</item>
+        <item>Mi volt a legboldogabb pillanat az életedben eddig?</item>
+        <item>Mi az a tulajdonság, amit a legjobban szeretsz magadban?</item>
+        <item>Ha bárhová utazhatnál a világon, hova mennél és miért?</item>
+        <item>Melyik könyv vagy film volt rád a legnagyobb hatással?</item>
+        <item>Mi a legnagyobb álmod, amit szeretnél megvalósítani?</item>
+        <item>Ki az a személy, aki a legnagyobb hatással volt az életedre?</item>
+        <item>Mi a legkedvesebb gyerekkori emléked?</item>
+        <item>Mi az, amitől a legjobban félsz vagy aggódsz?</item>
+        <item>Mi az a dolog, amit mindig is meg szerettél volna tanulni vagy kipróbálni?</item>
+        <item>Mi a legértékesebb lecke, amit az életben tanultál?</item>
+        <item>Hogyan írnád le a tökéletes hétköznapot?</item>
+        <item>Mi az, ami igazán motivál téged az életben?</item>
+        <item>Milyen zenét hallgatsz, amikor boldog vagy? És amikor szomorú?</item>
+        <item>Ha találkozhatnál bármely történelmi személlyel, ki lenne az és mit kérdeznél tőle?</item>
+        <item>Mi volt a legnagyobb kihívás, amivel szembe kellett nézned, és hogyan küzdötted le?</item>
+        <item>Melyik az a hely vagy környezet, ahol a leginkább önmagad tudsz lenni?</item>
+        <item>Mi az, amit a barátságban a legfontosabbnak tartasz?</item>
+        <item>Van valami, amit megbántál az életedben? Ha igen, mi az?</item>
+        <item>Mi az álommunka számodra?</item>
+        <item>Hogyan kezeled a stresszt vagy a nehéz helyzeteket?</item>
+        <item>Mit jelent számodra a siker?</item>
+        <item>Milyen céljaid vannak a következő öt évre?</item>
+        <item>Mi az, ami leginkább boldoggá tesz téged?</item>
+        <item>Melyik évszakot szereted a legjobban és miért?</item>
+        <item>Ha egy napig láthatatlan lehetnél, mit tennél?</item>
+        <item>Milyen hobbijaid vagy szenvedélyeid vannak?</item>
+        <item>Mi az, amit leginkább értékelsz egy barátságban?</item>
+        <item>Ha megváltoztathatnál valamit a múltban, mi lenne az?</item>
+        <item>Milyen szupererőt választanál magadnak és miért?</item>
+        <item>Mi volt a legemlékezetesebb utazásod?</item>
+        <item>Hogyan képzeled el az életedet tíz év múlva?</item>
+        <item>Van valami különleges tehetséged vagy képességed?</item>
+        <item>Mi az, amiből leginkább inspirációt meríted?</item>
+        <item>Milyen értékek fontosak számodra az életben?</item>
+        <item>Ha írhatnál egy levelet a fiatalabb önmagadnak, mit írnál bele?</item>
+        <item>Mi az a dolog, amire a legbüszkébb vagy?</item>
+        <item>Milyen nyelveket beszélsz, és van-e olyan, amit szeretnél megtanulni?</item>
+        <item>Mi az, amit a szüleidtől tanultál, és amit tovább szeretnél adni?</item>
+        <item>Mi az, amit szeretnél elérni ebben az évben?</item>
+        <item>Hogyan pihensz vagy töltődsz fel egy hosszú nap után?</item>
+        <item>Milyen változásokat szeretnél látni a világban?</item>
+        <item>Van-e valamilyen filozófia vagy mottó, ami szerint élsz?</item>
+        <item>Mi az, amit a legjobban szeretsz a szülővárosodban?</item>
+        <item>Ha megnyernéd a lottót, mit tennél a pénzzel?</item>
+        <item>Mi volt a legjobb tanács, amit valaha kaptál?</item>
+        <item>Milyen értékeket tartasz fontosnak egy közösségben?</item>
+        <item>Hogyan kezeled a konfliktusokat?</item>
+        <item>Mi a legszebb ajándék, amit valaha kaptál vagy adtál?</item>
+        <item>Milyen szokásaid vagy rutinjaid vannak a mindennapokban?</item>
+        <item>Mi az, amit szeretnél még megtanulni az életed során?</item>
+        <item>Mi tesz téged egyedivé szerinted?</item>
+        <item>Milyen történelmi eseményt szeretnél átélni, ha lehetne?</item>
+        <item>Hogyan határoznád meg a boldogságot?</item>
+        <item>Hogyan határoznád meg a sikert?</item>
+        <item>Mi az, amit leginkább értékelsz másokban?</item>
+        <item>Milyen céljaid vannak a karrieredben?</item>
+        <item>Mit gondolsz, mi az élet értelme?</item>
+        <item>Milyen zenét hallgatsz legszívesebben?</item>
+        <item>Van-e valamilyen álmod, ami gyakran visszatér?</item>
+        <item>Mi az, amitől leginkább félsz, de mégis szeretnéd kipróbálni?</item>
+        <item>Melyik a kedvenc idézeted és miért?</item>
+        <item>Ha egy dolgot megváltoztathatnál a világon, mi lenne az?</item>
+        <item>Mi az, amiért a leghálásabb vagy az életedben?</item>
+        <item>Hogyan kezeled a kudarcokat vagy a csalódásokat?</item>
+        <item>Milyen szerepet játszik a humor az életedben?</item>
+        <item>Milyen kulturális eseményeket szeretsz látogatni?</item>
+        <item>Mi az a tulajdonság, amit másokban csodálsz?</item>
+        <item>Milyen céljaid vannak a személyes fejlődés terén?</item>
+        <item>Ha írnál egy könyvet, miről szólna?</item>
+        <item>Hogyan mutatod ki a szeretetedet másoknak?</item>
+        <item>Milyen új szokást szeretnél bevezetni az életedbe?</item>
+        <item>Mi az, amitől igazán otthon érzed magad valahol?</item>
     </string-array>
 
     <string-array name="questions_lovers">
-        <item>@string/question_1</item>
-        <item>@string/question_2</item>
-        <item>@string/question_3</item>
-        <item>@string/question_4</item>
-        <item>@string/question_5</item>
-        <item>@string/question_6</item>
-        <item>@string/question_7</item>
-        <item>@string/question_8 This is a very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long question</item>
+        <item>Mit szerettél a legjobban azon a helyen, ahol felnőttél? Mit szerettél a legkevésbé?</item>
+        <item>Ki volt a gyermekkori hősöd? Miért?</item>
+        <item>Mi vagy ki befolyásolta leginkább az életeddel kapcsolatos döntéseidet?</item>
+        <item>Hogyan változtál meg a középiskolás korodhoz képest?</item>
+        <item>Miről álmodtál, hogy mi leszel, ha nagy leszel?</item>
+        <item>Mi az, ami örömet okoz neked a mindennapjaidban?</item>
+        <item>Mit gondoltál, amikor először megláttál?</item>
+        <item>Melyik három tulajdonságom miatt szerettél belém?</item>
+        <item>Mi az első kép, ami azonnal eszedbe jut, ha rám gondolsz?</item>
+        <item>Mi az az egy dolog a kapcsolatunkban, ami régebben zavart, de azóta már elfogadtad?</item>
+        <item>Mi az a dolog, amivel a kapcsolatunk kezdeti időszakában megpróbáltál lenyűgözni engem?</item>
+        <item>Mi az az egy dolog, ami régebben bosszantott téged magaddal kapcsolatban, de azóta megtanultad elfogadni?</item>
+        <item>Mi az a szó vagy kifejezés, amit én használok, és amit szeretsz?</item>
+        <item>Mi a legféltettebb kincsed?</item>
+        <item>Mik voltak az első szavaid gyermekként?</item>
+        <item>Mi az, ami hiányzik az életedből?</item>
+        <item>Melyik mondás írja le legjobban a kapcsolatunkat?</item>
+        <item>Hogyan változtál meg az elmúlt egy évben? Hogyan változtam meg én?</item>
+        <item>Mi a legmeglepőbb dolog a szerelemben?</item>
+        <item>Változtak a céljaid az életben? Hogyan?</item>
+        <item>Mi a visszatérő álmod?</item>
+        <item>Hogyan viszonyulsz édesanyádhoz/apádhoz/gondviselődhöz?</item>
+        <item>Mi a küldetésed az életben?</item>
+        <item>Mi az a bölcsesség, amit az általad legkevésbé kedvelt ember megfigyeléséből tanultál?</item>
+        <item>Mit találsz most izgalmasnak az életedben?</item>
+        <item>Ha lehetne egy varázserőd, mi lenne az?</item>
+        <item>Melyik tárgy emlékeztet téged leginkább rám: Esernyő, villanykörte, mobiltelefon, kenyér vagy ceruza. Miért?</item>
+        <item>Mi az egyik legnagyobb aggodalmad a jövőnkkel kapcsolatban?</item>
+        <item>Melyik szín jellemzi a mi meghitt kapcsolatunkat?</item>
+        <item>Melyik szó illik az általad választott színhez?</item>
+        <item>Mit gondolsz, hogyan tudnánk jobban szórakozni az életünkben?</item>
+        <item>Milyen állathoz hasonlítok?</item>
+        <item>Ha cégnevet kellene alkotnod a kapcsolatunknak, mi lenne az?</item>
+        <item>Hogyan képzelsz el engem 10 év múlva?</item>
+        <item>Ki a legstresszesebb az életedben? Miért?</item>
+        <item>Mi a te szeretetnyelved?</item>
+        <item>Milyen céljaid vannak a kapcsolatunkkal kapcsolatban?</item>
+        <item>Melyek azok a célok, amik még nem teljesültek be az életedben?</item>
+        <item>Változott a szemléleted a kapcsolatunkkal kapcsolatban? Ha igen, hogyan?</item>
+        <item>Mit tettél, hogy kihúzd magad életed legsötétebb időszakából?</item>
 
     </string-array>
 
@@ -168,4 +270,132 @@
         <item>Mondd el egy személyes problémádat, és kérd a partnered tanácsát, hogy ő hogyan oldaná meg! Aztán kérd meg a partnered, hogy azt is mondja meg, hogy szerinte benned milyen érzések lehetnek ezzel a kiválasztott problémával kapcsolatban!</item>
     </string-array>
 
+
+    <string-array name="Recap_Long_time_no_see">
+        <item>Mivel foglalkozol most?</item>
+        <item>Hol laksz most?</item>
+        <item>Vannak új hobbijaid?</item>
+        <item>Találkoztál valakivel a régi ismerőseink közül?</item>
+        <item>Meséljetek a legérdekesebb helyeről, ahol jártatok legutóbbi találkozásotok óta!</item>
+        <item>Mik a legfontosabb jelenlegi céljaid?</item>
+        <item>Mi volt a legjobb könyv, amit az elmúlt hónapban, évben olvastál?</item>
+        <item>Mi volt a legjobb film, amit az elmúlt hónapban, évben láttál?</item>
+        <item>Mi volt a legnagyobb kihívás amivel szembenéztél utóbbi időben?</item>
+        <item>Milyen új dolgokat kellett megtanulnod?</item>
+        <item>Milyen zenéket hallgatsz mostanában?</item>
+        <item>Melyek voltak a legnagyobb változások az életedben?</item>
+        <item>Mit tanultál magadról az elmúlt évek időszakban?</item>
+        <item>Van olyan teljesítény, amire különösen büszke vagy az elmúlt időből?</item>
+        <item>Vannak új barátaid, akikkel gyakran találkozol?</item>
+        <item>Mi motivál jelenleg?</item>
+        <item>Milyen tanácsot adnál a fiatalabb önmagadnak?</item>
+        <item>Van valami új kedvenc helyed a városban?</item>
+        <item>Milyen volt a legutóbbi nyaralásod?</item>
+        <item>Hogy telnek a hétköznapjaid?</item>
+        <item>Milyen volt a legutóbbi koncert vagy előadás, amin részt vettél?</item>
+        <item>Hogyan töltöd a szabadidődet?</item>
+        <item>Sportolsz valamit rendszeresen?</item>
+        <item>Mi foglalkoztat mostanában leginkább?</item>
+        <item>Követsz valamilyen érdekes blogot vagy podcastot?</item>
+        <item>Mi volt a legemlékezetesebb élményed az utóbbi időben?</item>
+        <item>Vannak új ötleteid vagy projektjeid, amiken dolgozol?</item>
+        <item>Hogy érzed magad a bőrödben?</item>
+        <item>Van valami, amit megváltoztatnál az életedben?</item>
+        <item>Hogyan képzeled el a következő öt évet?</item>
+        <item>Szoktál új emberekkel ismerkedni?</item>
+        <item>Mi az, ami mostanában boldoggá tesz?</item>
+        <item>Szeretnél valamilyen új szokást vagy rutint bevezetni?</item>
+        <item>Milyen könyveket vagy cikkeket olvasol mostanában?</item>
+        <item>Ki volt a leginspirálóbb személy, akivel az elmúlt időszakban találkoztál?</item>
+        <item>Milyen kihívásokkal nézel szembe a munkahelyeden?</item>
+        <item>Van valami új hobbid, amit ajánlanál?</item>
+        <item>Milyen technológiai újdonságok érdekelnek?</item>
+        <item>Mi volt a legjobb tanács, amit kaptál az elmúlt időszakban?</item>
+        <item>Hogyan relaxálsz egy hosszú nap után?</item>
+        <item>Milyen sporteseményeket követsz?</item>
+        <item>Mit gondolsz az aktuális politikai helyzetről?</item>
+        <item>Szeretnél valamilyen önkéntes munkát végezni?</item>
+        <item>Hogy állsz a munka és a magánélet egyensúlyával?</item>
+        <item>Milyen inspiráló történeteket hallottál mostanában?</item>
+    </string-array>
+
+
+    <string-array name="speed_dating">
+        <item>Mi a legérdekesebb dolog, amit mostanában tanultál?</item>
+        <item>Hogyan szeretsz kikapcsolódni egy hosszú nap után?</item>
+        <item>Melyek voltak a legemlékezetesebb helyek, ahova valaha utaztál?</item>
+        <item>Melyik könyv vagy film volt rád a legnagyobb hatással?</item>
+        <item>Ha egy szupererőt választhatnál, mi lenne az?</item>
+        <item>Milyen zenét hallgatsz legszívesebben?</item>
+        <item>Van háziállatod? Ha nincs, szívesen tartanál?</item>
+        <item>Mi a legőrültebb dolog, amit valaha tettél?</item>
+        <item>Hogyan töltöd a szabadidődet?</item>
+        <item>Milyen sportokat szeretsz nézni vagy űzni?</item>
+        <item>Mi a legfontosabb számodra egy barátságban?</item>
+        <item>Milyen lenne számodra egy álomutazás?</item>
+        <item>Milyen nyelveken beszélsz, mit szeretsz bennük?</item>
+        <item>Mi az, amit egy hozzád közel álló személynek feltétlenül tudnia kell rólad?</item>
+        <item>Milyen céljaid vannak a közeljövőben?</item>
+        <item>Szeretsz főzni? Mi a specialitásod?</item>
+        <item>Milyen sorozatokat szeretsz?</item>
+        <item>Mi a legfurcsább hobbid vagy szenvedélyed?</item>
+        <item>Hogyan jellemeznéd magad három szóban?</item>
+        <item>Mi volt a legemlékezetesebb ajándék, amit kaptál?</item>
+        <item>Szereted a kalandokat vagy inkább a biztonságot keresed?</item>
+        <item>Mi motivál leginkább az életben?</item>
+        <item>Mi a legnagyobb álmod?</item>
+        <item>Hogyan képzeled el magad öt év múlva?</item>
+        <item>Milyen típusú emberek inspirálnak téged?</item>
+        <item>Szeretsz táncolni vagy énekelni?</item>
+        <item>Milyen témákról szeretsz beszélgetni?</item>
+        <item>Mi azok a dolgok, amit feltétlenül megfigyelsz amikor egy új emberrel találkozol?</item>
+        <item>Mi szerettél volna lenni gyerekkorodban?</item>
+        <item>Mennyi köze van annak, amivel most foglalkozol ahhoz ami gyerekkorodban szerettél volna lenni?</item>
+        <item>Mi a kedvenc idézeted?</item>
+        <item>Ha meghívhatnál egy vacsorára három híres személyt, kik lennének azok?</item>
+        <item>Mi számodra a siker?</item>
+        <item>Mi a legnagyobb kihívás, amivel valaha szembesültél?</item>
+        <item>Szereted a meglepetéseket?</item>
+        <item>Hogyan kezeled a stresszt?</item>
+        <item>Mi a kedvenc évszakod és miért?</item>
+        <item>Milyen nyaralást részesítesz előnyben: tengerparton pihenést vagy túrázást?</item>
+        <item>Mi lenne az első dolgot, miután megnyerted a lottóötöst?</item>
+        <item>Hiszel a sorsban vagy az előre elrendeltetésben?</item>
+        <item>Milyen nyelveket szeretnél még megtanulni?</item>
+        <item>Mi az, amit mindig is ki szerettél volna próbálni, de még nem volt rá lehetőséged?</item>
+        <item>Ha visszamehetnél az időben, melyik korszakba utaznál?</item>
+        <item>Mi a legkorábbi emléked?</item>
+        <item>Hogyan telne számodra egy ideális hétköznap?</item>
+        <item>Milyen tulajdonságokat értékelsz egy párkapcsolatban?</item>
+        <item>Mi a véleményed az utazásról és új kultúrák megismeréséről?</item>
+        <item>Szeretsz olvasni? Mi volt az utolsó könyv, amit elolvastál?</item>
+        <item>Hogyan töltöd a hétvégéidet?</item>
+        <item>Mi az az étel, amit soha nem ennél meg?</item>
+        <item>Koránkelő típus vagy, vagy inkább sokáig maradsz fent?</item>
+        <item>Melyik három dolgot vinnéd magaddal egy lakatlan szigetre?</item>
+        <item>Mi lenne az álommunkád, ha bármit választhatnál?</item>
+        <item>Hiszel a szerelemben első látásra?</item>
+        <item>Mi az, amit a leginkább szeretsz a városban, ahol élsz?</item>
+        <item>Mi volt a legutóbbi dolog, amin igazán nevettél?</item>
+        <item>Ha egy napra egy másik személy lehetnél, kivel cserélnél helyet?</item>
+        <item>Mi inspirál téged?</item>
+        <item>Ha egy dolgot megváltoztathatnál a világon, mi lenne az?</item>
+        <item>Szeretsz spontán lenni vagy inkább tervezel?</item>
+        <item>Inkább otthon szeretsz maradni vagy kimozdulsz a hétvégén?</item>
+        <item>Mi az, amit mindenképpen szeretnél elérni az életedben?</item>
+        <item>Hogyan ünnepelsz meg egy sikert?</item>
+        <item>Mi a legfontosabb tanács, amit valaha kaptál?</item>
+        <item>Milyen filmeket szeretsz?</item>
+        <item>Mi az, amitől igazán feltöltődsz?</item>
+        <item>Szeretsz új dolgokat tanulni? Ha igen, mi volt a legutolsó dolog?</item>
+        <item>Van olyan mottó, ami megragadott, és ami szerint próbálod élni az életedet?</item>
+        <item>Milyen szerepet játszik a család az életedben?</item>
+        <item>Melyik a kedvenc ünneped, és hogyan szoktad ünnepelni?</item>
+        <item>Ki a példaképed vagy hősöd?</item>
+        <item>Melyik az a hely, ahová mindig is el akartál jutni?</item>
+        <item>Mi az, amitől igazán boldognak érzed magad?</item>
+        <item>Melyik tulajdonságot értékelsz a legjobban egy emberben?</item>
+        <item>Milyen emberi tulajdonság zavar a legjobban?</item>
+        <item>Mi az, amiért a leghálásabb vagy az életedben?</item>
+    </string-array>
 </resources>

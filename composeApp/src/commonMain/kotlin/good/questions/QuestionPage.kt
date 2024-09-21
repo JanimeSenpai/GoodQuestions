@@ -48,10 +48,11 @@ fun QuestionsPage(
         viewModel.importQuestions(questions.value)
         viewModel.onNextClick(isRandom, isLoopEnabled)
     }
-
+    var platform = getPlatform().name
+    println("platform=$platform")
     Scaffold(
         floatingActionButton = {
-            if (isEndOfList) {
+            if (isEndOfList|| platform=="Web with Kotlin/Wasm") {
                 FloatingActionButton(
                     onClick = { navController.navigate("main") },
                     modifier = Modifier.padding(16.dp)

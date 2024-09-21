@@ -29,60 +29,75 @@ fun MainScreen(
 ) {
     val audiences = listOf(
         "University Students",
-        "Close Friends",
-        "Couples",
+        "Getting acquainted",
+        "Friends",
+      //  "Close Friends",
         "Coworkers",
+        "Recap: Long time no see",
+        "Speed dating",
+        //"First date",
+        "Couples",
         "The 36 Questions That Lead to Love",
     )
     var selectedAudience by rememberSaveable { mutableStateOf<String?>(null) }
     var isMixEnabled by rememberSaveable { mutableStateOf(false) }
     var isLoopEnabled by rememberSaveable { mutableStateOf(false) }
-    Column(
-        modifier = Modifier.fillMaxSize().padding(6.dp),
-        verticalArrangement = Arrangement.SpaceBetween,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
+    BoxWithConstraints {
+        val itemWidth = 160.dp
+        val spacing = 16.dp
+        val totalItemWidth = itemWidth + spacing
+
+        // Calculate how many items fit in the available width
+        val itemsPerRow = (maxWidth / totalItemWidth).toInt().coerceAtLeast(1)
+
         Column(
-            modifier = Modifier.weight(1f),
-            verticalArrangement = Arrangement.Center,
+            modifier = Modifier.fillMaxSize().padding(6.dp),
+            verticalArrangement = Arrangement.SpaceBetween,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            audiences.chunked(2).forEach { rowItems ->
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceEvenly
-                ) {
-                    rowItems.forEach { audience ->
-                        AudienceSurface(
-                            audience = audience,
-                            isSelected = selectedAudience == audience,
-                            onSelect = { selectedAudience = audience }
-                        )
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                audiences.chunked(itemsPerRow).forEach { rowItems ->
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceEvenly
+                    ) {
+                        rowItems.forEach { audience ->
+                            AudienceSurface(
+                                audience = audience,
+                                isSelected = selectedAudience == audience,
+                                onSelect = { selectedAudience = audience }
+                            )
+                        }
                     }
                 }
             }
-        }
-        ControlButtons(
-            selectedAudience = selectedAudience,
-            isMixEnabled = isMixEnabled,
-            isLoopEnabled = isLoopEnabled,
-            onMixToggle = { isMixEnabled = !isMixEnabled },
-            onLoopToggle = { isLoopEnabled = !isLoopEnabled },
-            onPlayClick = {
-                selectedAudience?.let { audience ->
-                    onPlayClick(audience, isMixEnabled, isLoopEnabled)
+
+            ControlButtons(
+                selectedAudience = selectedAudience,
+                isMixEnabled = isMixEnabled,
+                isLoopEnabled = isLoopEnabled,
+                onMixToggle = { isMixEnabled = !isMixEnabled },
+                onLoopToggle = { isLoopEnabled = !isLoopEnabled },
+                onPlayClick = {
+                    selectedAudience?.let { audience ->
+                        onPlayClick(audience, isMixEnabled, isLoopEnabled)
+                    }
                 }
-            }
-        )
-        Image(
-            painter = painterResource(Res.drawable.BuyMeACoffee),
-            contentDescription = "Buy Me a Coffee",
-            modifier = Modifier
-                .padding(16.dp)
-                .clickable {
-                    // Define the action, e.g., open a URL or navigate
-                }.sizeIn(maxWidth = 300.dp, maxHeight = 150.dp)
-        )
+            )
+            Image(
+                painter = painterResource(Res.drawable.BuyMeACoffee),
+                contentDescription = "Buy Me a Coffee",
+                modifier = Modifier
+                    .padding(16.dp)
+                    .clickable {
+                        // Define the action, e.g., open a URL or navigate
+                    }.sizeIn(maxWidth = 300.dp, maxHeight = 150.dp)
+            )
+        }
     }
 }
 
@@ -92,7 +107,8 @@ fun AudienceSurface(
     isSelected: Boolean,
     onSelect: () -> Unit
 ) {
-    val targetColor = if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.primaryContainer
+    val targetColor =
+        if (isSelected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.primaryContainer
     val animatedColor by animateColorAsState(targetColor)
 
     Surface(
@@ -115,6 +131,7 @@ fun AudienceSurface(
         }
     }
 }
+
 @Composable
 fun ControlButtons(
     selectedAudience: String?,
