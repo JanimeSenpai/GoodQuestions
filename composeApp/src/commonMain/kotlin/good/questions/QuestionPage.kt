@@ -52,7 +52,7 @@ fun QuestionsPage(
     println("platform=$platform")
     Scaffold(
         floatingActionButton = {
-            if (isEndOfList|| platform=="Web with Kotlin/Wasm") {
+            if (isEndOfList|| "Android" !in platform /*platform=="Web with Kotlin/Wasm"*/) {
                 FloatingActionButton(
                     onClick = { navController.navigate("main") },
                     modifier = Modifier.padding(16.dp)

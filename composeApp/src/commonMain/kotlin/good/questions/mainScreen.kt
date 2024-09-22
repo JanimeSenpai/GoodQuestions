@@ -91,15 +91,25 @@ fun MainScreen(
                     }
                 }
             )
+            var open by remember { mutableStateOf(0) }
+
             Image(
                 painter = painterResource(Res.drawable.BuyMeACoffee),
                 contentDescription = "Buy Me a Coffee",
                 modifier = Modifier
                     .padding(16.dp)
-                    .clickable {
-                        // Define the action, e.g., open a URL or navigate
+                    .clickable {//open kofi page
+                        open++
+                        if("Wasm" in getPlatform().name) {
+                            openUrlwasm("https://ko-fi.com/discussiondive")
+
+                        }
                     }.sizeIn(maxWidth = 300.dp, maxHeight = 150.dp)
             )
+
+             if("Android" in getPlatform().name)   openUrl("https://ko-fi.com/discussiondive",open)//todo ennél sokkal elegánsabban illett volna megoldani ezt a részt
+
+
         }
     }
 }
@@ -185,3 +195,12 @@ fun ControlButtons(
         }
     }
 }
+
+
+
+
+@Composable
+expect fun openUrl(url: String,open:Int = 0)
+
+
+expect fun openUrlwasm(url: String)

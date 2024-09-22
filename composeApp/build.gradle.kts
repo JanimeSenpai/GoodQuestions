@@ -126,7 +126,7 @@ dependencies {
 
 compose.desktop {
     application {
-        mainClass = "good.questions.Mainkt"
+        mainClass = "good.questions.MainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
