@@ -13,21 +13,24 @@ fun AppNavigation() {
 
     NavHost(navController, startDestination = "main") {
         composable("main") {
-            MainScreen { audience, isRandom, isLoopEnabled ->
-                navController.navigate("questions/$audience?isRandom=$isRandom&isLoopEnabled=$isLoopEnabled")
+            MainScreen { audience,audienceID, isRandom, isLoopEnabled ->
+                navController.navigate("questions/$audience/$audienceID?isRandom=$isRandom&isLoopEnabled=$isLoopEnabled")
             }
         }
         composable(
-            "questions/{audience}?isRandom={isRandom}&isLoopEnabled={isLoopEnabled}",
+            "questions/{audience}/{audienceID}?isRandom={isRandom}&isLoopEnabled={isLoopEnabled}",
             arguments = listOf(
+                navArgument("audience") { type = NavType.StringType },
+                navArgument("audienceID") { type = NavType.IntType },
                 navArgument("isRandom") { type = NavType.BoolType },
                 navArgument("isLoopEnabled") { type = NavType.BoolType }
             )
         ) { backStackEntry ->
             val audience = backStackEntry.arguments?.getString("audience") ?: "Unknown"
+            val audienceID = backStackEntry.arguments?.getInt("audienceID") ?: 86
             val isRandom = backStackEntry.arguments?.getBoolean("isRandom") ?: false
             val isLoopEnabled = backStackEntry.arguments?.getBoolean("isLoopEnabled") ?: false
-            QuestionsPage(audience, isRandom, isLoopEnabled,navController)
+            QuestionsPage(audience,audienceID, isRandom, isLoopEnabled,navController)
         }
     }
 }

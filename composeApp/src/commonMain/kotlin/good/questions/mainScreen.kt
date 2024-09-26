@@ -18,30 +18,38 @@ import androidx.compose.ui.input.key.Key.Companion.R
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import goodquestions.composeapp.generated.resources.BuyMeACoffee
+import goodquestions.composeapp.generated.resources.Couples
+import goodquestions.composeapp.generated.resources.Coworkers
 import goodquestions.composeapp.generated.resources.Res
+import goodquestions.composeapp.generated.resources.SpeedDating
 import goodquestions.composeapp.generated.resources.compose_multiplatform
+import goodquestions.composeapp.generated.resources.friends
+import goodquestions.composeapp.generated.resources.recap
 import goodquestions.composeapp.generated.resources.repeat
 import goodquestions.composeapp.generated.resources.repeat_on
 import goodquestions.composeapp.generated.resources.shuffleIcon
 import goodquestions.composeapp.generated.resources.shuffleIcon_on
+import goodquestions.composeapp.generated.resources.university
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun MainScreen(
-    onPlayClick: (String, Boolean, Boolean) -> Unit
+    onPlayClick: (String,Int, Boolean, Boolean) -> Unit
 ) {
     val audiences = listOf(
-        "University Students",
-        "Getting acquainted",
-        "Friends",
-        "Close Friends",
-        "Coworkers",
-        "Recap: Long time no see",
-        "Speed dating",
-        "First date",
-        "Couples",
-        "The 36 Questions That Lead to Love",
+        Pair(stringResource(Res.string.university), 0),
+        // "Getting acquainted",
+        Pair(stringResource(Res.string.friends), 1),
+        //"Close Friends",
+        Pair(stringResource(Res.string.Coworkers), 2),
+        Pair(stringResource(Res.string.recap), 3),
+        Pair(stringResource(Res.string.SpeedDating), 4),
+        //Pair("First date", 5),
+      //  Pair(stringResource(Res.string.Couples), 6),
+        Pair("The 36 Questions That Lead to Love", 7)
     )
+    var selectedAudienceID by rememberSaveable { mutableStateOf<Int?>(null) }
     var selectedAudience by rememberSaveable { mutableStateOf<String?>(null) }
     var isMixEnabled by rememberSaveable { mutableStateOf(false) }
     var isLoopEnabled by rememberSaveable { mutableStateOf(false) }
@@ -51,7 +59,7 @@ fun MainScreen(
         val totalItemWidth = itemWidth + spacing
 
         // Calculate how many items fit in the available width
-        val itemsPerRow = (maxWidth / totalItemWidth).toInt().coerceIn(1,6)
+        val itemsPerRow = (maxWidth / totalItemWidth).toInt().coerceIn(1, 6)
 
         Column(
             modifier = Modifier.fillMaxSize().padding(6.dp),
@@ -59,7 +67,8 @@ fun MainScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Column(
-                modifier = Modifier.weight(1f).verticalScroll(rememberScrollState()),//todo görgetés helyett jobb lenne egy lapozós megoldás
+                modifier = Modifier.weight(1f)
+                    .verticalScroll(rememberScrollState()),//todo görgetés helyett jobb lenne egy lapozós megoldás
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
@@ -70,9 +79,11 @@ fun MainScreen(
                     ) {
                         rowItems.forEach { audience ->
                             AudienceSurface(
-                                audience = audience,
-                                isSelected = selectedAudience == audience,
-                                onSelect = { selectedAudience = audience }
+                                audience = audience.first,
+                                isSelected = selectedAudienceID == audience.second,
+                                onSelect = { selectedAudienceID = audience.second
+                                selectedAudience=audience.first
+                                }
                             )
                         }
                     }
@@ -80,34 +91,37 @@ fun MainScreen(
             }
 
             ControlButtons(
-                selectedAudience = selectedAudience,
+                selectedAudienceID = selectedAudienceID,
                 isMixEnabled = isMixEnabled,
                 isLoopEnabled = isLoopEnabled,
                 onMixToggle = { isMixEnabled = !isMixEnabled },
                 onLoopToggle = { isLoopEnabled = !isLoopEnabled },
                 onPlayClick = {
-                    selectedAudience?.let { audience ->
-                        onPlayClick(audience, isMixEnabled, isLoopEnabled)
+                    selectedAudienceID?.let { audienceid ->
+                        selectedAudience?.let { audience-> onPlayClick(audience,audienceid, isMixEnabled, isLoopEnabled) }
                     }
                 }
             )
             var open by remember { mutableStateOf(0) }
 
-            Image(
+          if(true)  Image(
                 painter = painterResource(Res.drawable.BuyMeACoffee),
                 contentDescription = "Buy Me a Coffee",
                 modifier = Modifier
                     .padding(16.dp)
                     .clickable {//open kofi page
                         open++
-                        if("Wasm" in getPlatform().name) {
+                        if ("Wasm" in getPlatform().name) {
                             openUrlwasm("https://ko-fi.com/discussiondive")
 
                         }
                     }.sizeIn(maxWidth = 300.dp, maxHeight = 150.dp)
             )
 
-             if("Android" in getPlatform().name)   openUrl("https://ko-fi.com/discussiondive",open)//todo ennél sokkal elegánsabban illett volna megoldani ezt a részt
+            if ("Android" in getPlatform().name) openUrl(
+                "https://ko-fi.com/discussiondive",
+                open
+            )//todo ennél sokkal elegánsabban illett volna megoldani ezt a részt
 
 
         }
@@ -147,7 +161,7 @@ fun AudienceSurface(
 
 @Composable
 fun ControlButtons(
-    selectedAudience: String?,
+    selectedAudienceID: Int?,
     isMixEnabled: Boolean,
     isLoopEnabled: Boolean,
     onMixToggle: () -> Unit,
@@ -155,7 +169,7 @@ fun ControlButtons(
     onPlayClick: () -> Unit
 ) {
     Surface(
-        modifier = Modifier .wrapContentWidth(),
+        modifier = Modifier.wrapContentWidth(),
         color = MaterialTheme.colorScheme.surface,
         tonalElevation = 8.dp,
         shape = MaterialTheme.shapes.medium
@@ -175,7 +189,7 @@ fun ControlButtons(
                     contentDescription = "Mix"
                 )
             }
-            Spacer(modifier =Modifier.width(16.dp))
+            Spacer(modifier = Modifier.width(16.dp))
             IconButton(onClick = onLoopToggle) {
                 Icon(
                     painter = if (isLoopEnabled) painterResource(Res.drawable.repeat_on) else painterResource(
@@ -184,11 +198,11 @@ fun ControlButtons(
                     contentDescription = "Loop"
                 )
             }
-            Spacer(modifier =Modifier.width(16.dp))
+            Spacer(modifier = Modifier.width(16.dp))
 
             IconButton(
                 onClick = onPlayClick,
-                enabled = selectedAudience != null
+                enabled = selectedAudienceID != null
             ) {
                 Icon(Icons.Default.PlayArrow, contentDescription = "Play")
             }
@@ -197,10 +211,8 @@ fun ControlButtons(
 }
 
 
-
-
 @Composable
-expect fun openUrl(url: String,open:Int = 0)
+expect fun openUrl(url: String, open: Int = 0)
 
 
 expect fun openUrlwasm(url: String)

@@ -66,4 +66,14 @@
     <string name="question_65">Van olyan hobbi/projekt, amibe már rég szerettél volna belefogni, de mégsem tetted? ha igen, akkor vajon miért?</string>
     <string name="question_66">Milyen nyelveken beszélsz, mit szeretsz bennük?</string>
     <string name="question_67">Használsz AI-t munkához vagy a hobbidhoz?</string>
+
+    <string name="university">Egyetemisták</string>
+    <string name="friends">Barátok</string>
+    <string name="Coworkers">Munkatársak</string>
+    <string name="Couples">Párok</string>
+    <string name="the36questions">The 36 Questions That Lead to Love</string>
+    <string name="recap">Rég nem látott barátok</string>
+    <string name="SpeedDating">Rapid Randi</string>
+    <string name="endoflist">A kérdéssor végére értünk</string>
+
 </resources>

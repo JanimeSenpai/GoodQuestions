@@ -67,4 +67,14 @@
     <string name="question_66">What languages do you speak, what do you like about them?</string>
     <string name="question_67">Do you use AI for work or hobbies?</string>
 
+
+    <string name="university">University Students</string>
+    <string name="friends">Friends</string>
+    <string name="Coworkers">Coworkers</string>
+    <string name="Couples">Couples</string>
+    <string name="the36questions">The 36 Questions That Lead to Love</string>
+    <string name="recap">Long time no see</string>
+    <string name="SpeedDating">Speed dating</string>
+    <string name="endoflist">We reached the end of the question list</string>
+
 </resources>

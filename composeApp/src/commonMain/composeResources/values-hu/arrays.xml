@@ -149,8 +149,6 @@
         <item>Ki volt a gyermekkori hősöd? Miért?</item>
         <item>Mi vagy ki befolyásolta leginkább az életeddel kapcsolatos döntéseidet?</item>
         <item>Hogyan változtál meg a középiskolás korodhoz képest?</item>
-        <item>Miről álmodtál, hogy mi leszel, ha nagy leszel?</item>
-        <item>Mi az, ami örömet okoz neked a mindennapjaidban?</item>
         <item>Mit gondoltál, amikor először megláttál?</item>
         <item>Melyik három tulajdonságom miatt szerettél belém?</item>
         <item>Mi az első kép, ami azonnal eszedbe jut, ha rám gondolsz?</item>
@@ -161,11 +159,9 @@
         <item>Mi a legféltettebb kincsed?</item>
         <item>Mik voltak az első szavaid gyermekként?</item>
         <item>Mi az, ami hiányzik az életedből?</item>
-        <item>Melyik mondás írja le legjobban a kapcsolatunkat?</item>
         <item>Hogyan változtál meg az elmúlt egy évben? Hogyan változtam meg én?</item>
         <item>Mi a legmeglepőbb dolog a szerelemben?</item>
         <item>Változtak a céljaid az életben? Hogyan?</item>
-        <item>Mi a visszatérő álmod?</item>
         <item>Hogyan viszonyulsz édesanyádhoz/apádhoz?</item>
         <item>Mi a küldetésed az életben?</item>
         <item>Mi az a bölcsesség, amit az általad legkevésbé kedvelt ember megfigyeléséből tanultál?</item>
@@ -173,7 +169,6 @@
         <item>Ha lehetne egy varázserőd, mi lenne az?</item>
         <item>Mi a legnagyobb aggodalmad a jövőnkkel kapcsolatban?</item>
         <item>Hogyan képzelsz el engem 10 év múlva?</item>
-        <item>Ki stresszel leginkább az életedben? Miért?</item>
         <item>Mi a te szeretetnyelved?</item>
         <item>Milyen céljaid vannak a kapcsolatunkkal?</item>
         <item>Melyek azok a célok, amik még nem teljesültek be az életedben?</item>
@@ -183,198 +178,34 @@
     </string-array>
 
     <string-array name="team_building_questions">
-    <item>Melyik az a készség, amelyről úgy gondolja, hogy a munkahelyén nem használják ki eléggé?</item>
-    <item>Ha egy napig a világ bármelyik munkáját végezhetné, mi lenne az, és miért?</item>
-    <item>Melyik volt a legérdekesebb projekt, amin ennél a vállalatnál dolgozott?</item>
-    <item>Hogyan szeretsz visszajelzést kapni?</item>
-    <item>Mi az az egy dolog, amit nagyra értékel a csapatában?</item>
+    <item>Melyik az a képességed, amelyről úgy gondolod, hogy a munkád során nem tudod kihasználni?</item>
+    <item>Ha egy napra bármilyen munkát kipróbálhatnál, mi lenne az, és miért?</item>
+    <item>Melyik volt a legérdekesebb projekt, amin eddig dolgoztál?</item>
+    <item>Mi az, amit nagyra értékelsz a csapatodban?</item>
     <item>Ha azonnal megtanulhatnál egy új készséget, mi lenne az?</item>
-    <item>Mi a kedvenc módja annak, hogy kikapcsolódjon egy fárasztó nap után?</item>
-    <item>Hogyan marad motivált a kihívást jelentő projektek során?</item>
-    <item>Mi az az egy dolog, amit mostanában tanultál egy munkatársadtól?</item>
-    <item>Ha bármelyik korábbi vagy jelenlegi vezetővel együtt ebédelhetne, ki lenne az, és miért?</item>.
+    <item>Mi a kedvenc módod arra, hogy kikapcsolódj egy fárasztó nap után?</item>
+    <item>Hogyan maradsz motivált a kihívást jelentő projektek során?</item>
+    <item>Nevezz meg egy dolgot, amit mostanában tanultál egy munkatársadtól!</item>
     <item>Mi az a dolog, amit megváltoztatnál a munkakörnyezetünkben?</item>
-    <item>Hogyan kezeli a stresszt a szoros határidők alatt?</item>
+    <item>Hogyan kezeled a stresszt a szoros határidők alatt?</item>
     <item>Melyik a kedvenc csapatépítő tevékenységed, amin részt vettél?</item>
-    <item>Mi az az egy cél, amit idén szakmai fejlődéseddel kapcsolatban kitűztél magad elé?</item>
-    <item>Hogyan ünnepli meg az elért eredményeket, legyenek azok nagyok vagy kicsik?</item>
-    <item>Melyik a kedvenc termelékenységi eszköze vagy alkalmazása?</item>
-    <item>Hogyan tartja egyensúlyban a munkát és a magánéletet?</item>
-    <item>Melyik az a könyv vagy cikk, amelyik befolyásolta a munkához való hozzáállását?</item>.
-    <item>Mi a kedvenc módja a másokkal való együttműködésnek?</item>
-    <item>Hogyan kezeli a munkahelyi konfliktusokat vagy nézeteltéréseket?</item>
-    <item>Mi az az egy dolog, amiről azt kívánta volna, bárcsak tudta volna, amikor elkezdte a karrierjét?</item>.
-    <item>Hogyan rangsorolja a feladatokat, amikor minden sürgősnek tűnik?</item>.
-    <item>Mi a kedvenc része a munkádban?</item>
+    <item>Milyen célt tűztél ki idén magad elé a szakmai fejlődéseddel kapcsolatban?</item>
+    <item>Hogyan ünnepled meg az elért eredményeket?</item>
+    <item>Hogyan tartod egyensúlyban a munkát és a magánéletet?</item>
+    <item>Nevezz meg egy könyvet, mely befolyásolta a munkához való hozzáállásodat!</item>.
+    <item>Hogyan kezeled a munkahelyi konfliktusokat vagy nézeteltéréseket?</item>
+    <item>Mi az, amiről azt kívánod, hogy bárcsak tudtad volna már akkor, mikor elkezdted a karrieredet?</item>.
+    <item>Hogyan rangsorolod a feladatokat, amikor minden sürgősnek tűnik?</item>.
     <item>Hogyan maradsz szervezett több projekt mellett?</item>
-    <item>Mi az az egy dolog, amit szívesen megtanulnál a csapattársaidtól?</item>.
+    <item>Mi az, amit szívesen megtanulnál a csapattársaidtól?</item>.
     <item>Hogyan közelíted meg a problémamegoldást csapatmunkában?</item>
-    <item>Mi a kedvenc módja annak, hogy visszaadjon a közösségnek?</item>
-    <item>Hogyan biztosítja a hatékony kommunikációt távoli munkakörnyezetben?</item>
-    <item>Mi az az egy dolog, amit csodálsz egy munkatársadban?</item>
-    <item>Hogyan tart lépést az iparági trendekkel és fejleményekkel?</item>
-    <item>Mi a kedvenc módja a napkezdésnek?</item>
-    <item>Hogyan kezeli a visszajelzést vagy a kritikát?</item>
-    <item>Mi az az egy dolog, amiről úgy gondolja, hogy a csapatunk jobban is csinálhatná?</item>
-    <item>Hogyan ösztönzi a kreativitást és az innovációt a munkájában?</item>
-    <item>Mi a kedvenc módja annak, hogy feltöltődjön a munkanap során?</item>
+    <item>Nevezz meg egy dolgot, amit csodálsz egy munkatársadban!</item>
+    <item>Hogyan tartasz lépést az iparági trendekkel és fejleményekkel?</item>
+    <item>Hogyan kezeled a visszajelzéseket vagy a kritikát?</item>
     <item>Hogyan építesz bizalmat az új csapattagokkal?</item>
-    <item>Mi az az egy dolog, amit elértél a munkahelyeden, és amire büszke vagy?</item>
-    <item>Hogyan alkalmazkodik a munkahelyi változásokhoz?</item>
-    <item>Mi a kedvenc módja a csapatsikerek megünneplésére?</item>
-    <item>Hogyan biztosítja a befogadást és a sokszínűséget a csapatmegbeszélések során?</item>
+    <item>Nevezz meg egy dolgot, amit elértél a munkahelyeden, és amire büszke vagy!</item>
 
 
-        <item>Mi volt a legérdekesebb dolog, amit a múlt héten tanultál?</item>
-        <item>Van valamilyen hobbi vagy szenvedély, amiről kevesen tudnak?</item>
-        <item>Ha választhatnál egy szupererőt, mi lenne az és miért?</item>
-        <item>Melyik a kedvenc helyed a városban, ahol élsz?</item>
-        <item>Mi inspirál téged a legjobban a munkádban?</item>
-        <item>Milyen könyvet olvastál legutóbb, ami nagy hatással volt rád?</item>
-        <item>Ha utazhatnál bárhová a világon, hová mennél?</item>
-        <item>Van-e olyan mottó vagy idézet, ami különösen fontos számodra?</item>
-        <item>Mi volt a legjobb tanács, amit valaha kaptál?</item>
-        <item>Melyik film vagy sorozat szereplő szeretnél lenni és miért?</item>
-        <item>Ha megváltoztathatnál valamit a múltadban, mi lenne az?</item>
-        <item>Melyik évszak a kedvenced és miért?</item>
-        <item>Hogyan töltöd szívesen a szabadidődet?</item>
-        <item>Van-e olyan étel, amit soha nem ennél meg?</item>
-        <item>Mi volt a legizgalmasabb utazásod?</item>
-        <item>Milyen nyelvet szeretnél megtanulni és miért?</item>
-        <item>Ha lehetne egy napod bárkivel, élő vagy halott, ki lenne az?</item>
-        <item>Mi volt a legnagyobb kihívás, amivel eddig szembesültél?</item>
-        <item>Melyik zenei műfaj áll hozzád a legközelebb?</item>
-        <item>Ha egy napra szakmát cserélhetnél valakivel, ki lenne az?</item>
-        <item>Van-e valamilyen különleges tehetséged vagy képességed?</item>
-        <item>Mi a legjobb emléked a gyerekkorodból?</item>
-        <item>Milyen sportokat szeretsz nézni vagy játszani?</item>
-        <item>Ha saját vállalkozást indítanál, mivel foglalkozna?</item>
-        <item>Mi a kedvenc ünneped és hogyan szoktad ünnepelni?</item>
-        <item>Melyik történelmi személlyel találkoznál szívesen?</item>
-        <item>Ha egy könyvet írnál, miről szólna?</item>
-        <item>Mi az, amit mindenképpen szeretnél megtenni az életedben?</item>
-        <item>Melyik három dolgot vinnéd magaddal egy lakatlan szigetre?</item>
-        <item>Milyen szerepet töltesz be általában egy csapatban?</item>
-        <item>Mi volt a legjobb ajándék, amit valaha kaptál vagy adtál?</item>
-        <item>Ha bármilyen hangszeren megtanulhatnál játszani, melyik lenne az?</item>
-        <item>Mi az az egy dolog, ami nélkül nem tudnál élni?</item>
-        <item>Melyik a kedvenc színed és van-e jelentősége számodra?</item>
-        <item>Mi a legkülönösebb álmod, amit valaha álmodtál?</item>
-        <item>Van-e valamilyen becenév, amit szeretsz vagy nem szeretsz?</item>
-        <item>Melyik az a hely, ahol mindig jól érzed magad?</item>
-        <item>Mi a kedvenc idézeted egy filmből vagy könyvből?</item>
-        <item>Hogyan küzdesz meg a stresszel vagy a nehéz helyzetekkel?</item>
-        <item>Milyen célt tűztél ki magad elé az idei évre?</item>
-        <item>Ha egyetlen zenei albumot hallgathatnál csak, melyik lenne az?</item>
-        <item>Milyen témáról tudnál órákig beszélni unalom nélkül?</item>
-        <item>Mi volt a legmeglepőbb dolog, amit valaha tettél?</item>
-        <item>Ha visszautazhatnál az időben, melyik korszakot választanád?</item>
-        <item>Mi volt a legjobb koncert vagy előadás, amin részt vettél?</item>
-        <item>Melyik nyaralásod volt a legemlékezetesebb és miért?</item>
-        <item>Mi az a tulajdonság, amit leginkább értékelsz másokban?</item>
-        <item>Ha megnyernéd a lottót, mit tennél először?</item>
-        <item>Van-e valamilyen fóbiád vagy félelmed?</item>
-        <item>Milyen nyelven szeretsz leginkább kommunikálni?</item>
-        <item>Mi a legérdekesebb dolog a munkahelyeden számodra?</item>
-        <item>Ha lenne egy napod, ami csak rólad szól, hogyan töltenéd el?</item>
-        <item>Mi inspirál téged a mindennapokban?</item>
-        <item>Melyik ország kultúrája vonz a legjobban?</item>
-        <item>Van-e kedvenc idézeted egy dalból?</item>
-        <item>Melyik könyvet ajánlanád mindenkinek és miért?</item>
-        <item>Mi szerinted a legfontosabb dolog az életben?</item>
-        <item>Milyen képességre vagy tulajdonságra vagy a legbüszkébb magadban?</item>
-        <item>Hogyan írnád le egy tökéletes napodat?</item>
-        <item>Mi az a dolog, amitől mindig jó kedved lesz?</item>
-        <item>Ha lehetne egy kívánságod, mi lenne az?</item>
-        <item>Mi a legfurcsább étel, amit valaha kóstoltál?</item>
-        <item>Melyik hírességgel cserélnél életet egy napra?</item>
-        <item>Ha új szakmát tanulnál, mi lenne az?</item>
-        <item>Melyik film vagy könyv változtatta meg leginkább a gondolkodásodat?</item>
-        <item>Mi az álomautód?</item>
-        <item>Melyik városban élnél legszívesebben?</item>
-        <item>Ha háziállat lehetnél, melyik lennél és miért?</item>
-        <item>Mi volt a legviccesebb helyzet, amibe valaha keveredtél?</item>
-        <item>Milyen tanácsot adnál fiatalabb önmagadnak?</item>
-        <item>Melyik technológiai újítás tetszik a legjobban?</item>
-        <item>Mi az a dolog, amit szeretnél megtanulni idén?</item>
-        <item>Van-e valamilyen gyűjteményed?</item>
-        <item>Mi a legjobb módja szerinted a pihenésnek?</item>
-        <item>Melyik ünnepet tartod a legfontosabbnak és miért?</item>
-        <item>Mi a kedvenc sporteseményed, amit szívesen nézel?</item>
-        <item>Hogyan képzeled el magad tíz év múlva?</item>
-        <item>Melyik híres műalkotás lenyűgöz téged?</item>
-        <item>Mi az a dolog, amitől leginkább félsz?</item>
-        <item>Melyik ételt szereted a legjobban főzni vagy készíteni?</item>
-        <item>Ha írhatnál egy levelet egy híres személynek, ki lenne az?</item>
-        <item>Mi a kedvenc szórakozási formád a barátaiddal?</item>
-        <item>Melyik az a készség, amit szívesen fejlesztenél?</item>
-        <item>Mi volt a legjobb döntés, amit hoztál?</item>
-        <item>Melyik a kedvenc évfordulód vagy mérföldköved?</item>
-        <item>Van-e olyan szokásod, amit meg szeretnél változtatni?</item>
-        <item>Mi a legizgalmasabb terv, amit a közeljövőben szeretnél megvalósítani?</item>
-        <item>Milyen volt az első munkahelyed?</item>
-        <item>Mi az első dolog, amit reggelente csinálsz?</item>
-        <item>Ha boldogságot lehetne palackozni, mi lenne az összetevője?</item>
-        <item>Melyik az a dal, ami mindig mosolyt csal az arcodra?</item>
-        <item>Mi a legfontosabb lecke, amit az életben tanultál?</item>
-        <item>Milyen lenne az álomotthonod?</item>
-        <item>Melyik a kedvenc évszázadod a történelemben?</item>
-        <item>Ha örökbefogadhatnál egy állatot, mit választanál?</item>
-        <item>Mi a kedvenc időtöltésed esős napokon?</item>
-        <item>Melyik volt a kedvenc tantárgyad az iskolában?</item>
-        <item>Mi az a technológia vagy találmány, amit szívesen látnál a jövőben?</item>
-        <item>Melyik az a hely, ahová mindig visszatérnél?</item>
-        <item>Mi inspirál a legjobban más emberekben?</item>
-        <item>Ha egy híres festmény szereplője lehetnél, melyik lenne az?</item>
-        <item>Van-e kedvenc családi hagyományod?</item>
-        <item>Melyik a kedvenc időjárásod és miért?</item>
-        <item>Mit jelent számodra a siker?</item>
-        <item>Mi az, amit a legfontosabbnak tartasz egy kapcsolatban?</item>
-        <item>Ha megváltoztathatnál egy dolgot a világban, mi lenne az?</item>
-        <item>Milyen szuperképességgel rendelkeznél szívesen?</item>
-        <item>Melyik az a könyv vagy film, amit többször is elolvasol vagy megnézel?</item>
-        <item>Mi lenne az álomállásod, ha bármit választhatnál?</item>
-        <item>Mi a kedvenc desszerted?</item>
-        <item>Milyen nyelveken beszélsz és melyiket szeretnéd még megtanulni?</item>
-        <item>Mi volt a legjobb vakációd és mitől volt különleges?</item>
-        <item>Van-e hobbid, amit gyerekkorod óta űzöl?</item>
-        <item>Mi az első emléked gyerekkorodból?</item>
-        <item>Melyik az a tevékenység, ami teljesen kikapcsol téged?</item>
-        <item>Mi a legnagyobb álmod, amit szeretnél elérni?</item>
-        <item>Melyik az a művészeti ág, amit a legközelebb érzel magadhoz?</item>
-        <item>Ha visszamehetnél az egyetemre, mit tanulnál?</item>
-        <item>Mi a kedvenc módja annak, hogy ünnepeld a sikereidet?</item>
-        <item>Milyen zene segít neked koncentrálni vagy relaxálni?</item>
-        <item>Mi az, ami mindig mosolyt csal az arcodra?</item>
-        <item>Van-e kedvenc kávézód vagy éttermed?</item>
-        <item>Mi lenne az első dolog, amit tennél, ha láthatatlan lennél egy napra?</item>
-        <item>Milyen önkéntes munkát vállalnál szívesen?</item>
-        <item>Melyik az a sport, amit mindig ki akartál próbálni?</item>
-        <item>Mi a legjobb tanács, amit valaha adtál valakinek?</item>
-        <item>Mi az, amitől a legbüszkébbnek érzed magad?</item>
-        <item>Ha három kívánságod lehetne, mik lennének?</item>
-        <item>Melyik az a hely, ahol a legnyugodtabbnak érzed magad?</item>
-        <item>Mi a kedvenc ünnepi hagyományod?</item>
-        <item>Hogyan írnád le magad három szóban?</item>
-        <item>Mi az a téma vagy terület, amire több figyelmet szeretnél fordítani?</item>
-        <item>Melyik volt a legérdekesebb muzeumi látogatásod?</item>
-        <item>Mi a kedvenc idézeted és miért fontos számodra?</item>
-        <item>Melyik hír vagy esemény hatott rád leginkább az utóbbi időben?</item>
-        <item>Ha lehetne saját címerked vagy logód, milyen elemekből állna?</item>
-        <item>Milyen új szokást szeretnél bevezetni az életedbe?</item>
-        <item>Mi az a dal, amit a leggyakrabban hallgatsz?</item>
-        <item>Melyik az a film vagy színházi előadás, amit legutóbb láttál és ajánlanád?</item>
-        <item>Mi a legfurcsább vagy legviccesebb álmod?</item>
-        <item>Milyen készségeket tartasz a legfontosabbnak a munkádban?</item>
-        <item>Ha rendezhetnél egy bulit, mi lenne annak a témája?</item>
-        <item>Mi az első dolog, ami eszedbe jut a gyermekkorodról?</item>
-        <item>Milyen szerepet játszanak az életedben a barátaid?</item>
-        <item>Melyik híres festő vagy zeneszerző műveit szereted leginkább?</item>
-        <item>Mi az, amitől igazi otthonnak érzed a lakásodat?</item>
-        <item>Ha megírhatnád az életed történetét, mi lenne a címe?</item>
-        <item>Melyik az a helyi vállalkozás vagy kezdeményezés, amit támogatni szeretnél?</item>
-        <item>Mi a legfontosabb számodra a munkádban?</item>
-        <item>Ha egy egész napot tölthetnél a szabadban, mit csinálnál?</item>
 </string-array>
 
     <string-array name="Thirtisixquestions_that_lead_to_love">

@@ -20,20 +20,24 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import goodquestions.composeapp.generated.resources.Recap_Long_time_no_see
 import goodquestions.composeapp.generated.resources.Res
 import goodquestions.composeapp.generated.resources.Thirtisixquestions_that_lead_to_love
+import goodquestions.composeapp.generated.resources.endoflist
 import goodquestions.composeapp.generated.resources.questions_friends
 import goodquestions.composeapp.generated.resources.questions_lovers
 import goodquestions.composeapp.generated.resources.questions_university
+import goodquestions.composeapp.generated.resources.speed_dating
 import goodquestions.composeapp.generated.resources.team_building_questions
 import goodquestions.composeapp.generated.resources.timer
 import kotlinx.coroutines.delay
 import org.jetbrains.compose.resources.getStringArray
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun QuestionsPage(
-    audience: String, isRandom: Boolean, isLoopEnabled: Boolean, navController: NavHostController
+    audience: String,audienceID: Int, isRandom: Boolean, isLoopEnabled: Boolean, navController: NavHostController
 ) {
 
     val questions = remember { mutableStateOf<List<String>>(emptyList()) }
@@ -44,7 +48,7 @@ fun QuestionsPage(
     val isEndOfList by viewModel.endOfQuestionList.collectAsState()
 
     LaunchedEffect(audience) {
-        questions.value = getQuestionsForAudience(audience)
+        questions.value = getQuestionsForAudience(audienceID)
         viewModel.importQuestions(questions.value)
         viewModel.onNextClick(isRandom, isLoopEnabled)
     }
@@ -100,7 +104,7 @@ fun QuestionsPage(
                             Spacer(modifier = Modifier.height(16.dp))
                             Text(
                                 text = if (isEndOfList) {
-                                    "We reached the end of the question list"
+                                    stringResource(Res.string.endoflist)
                                 } else currentQuestion,
                                 style = MaterialTheme.typography.headlineLarge
                             )
@@ -252,13 +256,17 @@ fun QuestionControls(
     }
 }
 
-suspend fun getQuestionsForAudience(audience: String): List<String> {
-    return when (audience) {
-        "University Students" -> getStringArray(Res.array.questions_university)
-        "Close Friends" -> getStringArray(Res.array.questions_friends)
-        "Couples" -> getStringArray(Res.array.questions_lovers)
-        "Coworkers" -> getStringArray(Res.array.team_building_questions)
-        "The 36 Questions That Lead to Love" -> getStringArray(Res.array.Thirtisixquestions_that_lead_to_love)
+suspend fun getQuestionsForAudience(audienceID: Int): List<String> {
+    return when (audienceID) {
+        0 -> getStringArray(Res.array.questions_university)
+        1 -> getStringArray(Res.array.questions_friends)
+        2 -> getStringArray(Res.array.team_building_questions)
+        3-> getStringArray(Res.array.Recap_Long_time_no_see)
+        4-> getStringArray(Res.array.speed_dating)
+        //5-> getStringArray(Res.array.)
+        6 -> getStringArray(Res.array.questions_lovers)
+
+        7-> getStringArray(Res.array.Thirtisixquestions_that_lead_to_love)
         else -> listOf("There should have been an audience selected!")
     }
 }
