@@ -252,4 +252,128 @@
         <item>Of all the people in your family, whose death would you find most disturbing? Why?</item>
         <item>Share a personal problem and ask your partner’s advice on how he or she might handle it. Also, as your partner to reflect back to you how you seem to be feeling about the problem you have chosen.</item>
     </string-array>
+
+    <string-array name="Recap_Long_time_no_see">
+        <item>What is your job now?</item>
+        <item>Where do you live now?</item>
+        <item>Any new hobbies?</item>
+        <item>Have you met any of our old friends?</item>
+        <item>Tell each other about the most interesting place you have been since you last met!</item>
+        <item>What are your current most important goals?</item>
+        <item>What was the best book you read in the last month or year?</item>
+        <item>What was the best movie you saw in the last month or year?</item>
+        <item>What has been the biggest challenge you have faced recently?</item>
+        <item>What new things have you had to learn?</item>
+        <item>What music have you been listening to lately?</item>
+        <item>What have been the biggest changes in your life?</item>
+        <item>What have you learned about yourself recently?</item>
+        <item>Any accomplishments you are particularly proud of from the past time?</item>
+        <item>Are there any new friends you see often?</item>
+        <item>What motivates you at the moment?</item>
+        <item>What advice would you give to your younger self?</item>
+        <item>Do you have a new favorite place in town?</item>
+        <item>How was your last holiday?</item>
+        <item>How do you spend your weekdays?</item>
+        <item>What was the last concert or performance you attended?</item>
+        <item>How do you spend your free time?</item>
+        <item>Do you do any sports regularly?</item>
+        <item>What are you most interested in these days?</item>
+        <item>Do you follow any interesting blogs or podcasts?</item>
+        <item>What has been your most memorable experience recently?</item>
+        <item>Any new ideas or projects you are working on?</item>
+        <item>Is there anything you would change in your life?</item>
+        <item>How do you envision the next five years?</item>
+        <item>Do you like meeting new people?</item>
+        <item>What makes you happy these days?</item>
+        <item>Are there any new habits or routines you'd like to introduce?</item>
+        <item>What books or articles have you been reading lately?</item>
+        <item>Who has been the most inspiring person you have met recently?</item>
+        <item>What challenges do you face at work?</item>
+        <item>Do you have any new hobbies you would recommend?</item>
+        <item>What tech news are you interested in?</item>
+        <item>What was the best piece of advice you received recently?</item>
+        <item>How do you relax after a long day?</item>
+        <item>What sport events do you follow?</item>
+        <item>What do you think about the current political situation?</item>
+        <item>Would you like to do some voluntary work?</item>
+        <item>How is your work-life balance?</item>
+        <item>What inspiring stories have you heard lately?</item>
+    </string-array>
+    <string-array name="speed_dating">
+        <item>What is the most interesting thing you have learned recently?</item>
+        <item>How do you like to relax after a long day?</item>
+        <item>What are the most memorable places you've ever travelled to?</item>
+        <item>Which book or film has had the biggest impact on you?</item>
+        <item>If you could choose one superpower, what would it be?</item>
+        <item>What is your favourite kind of music to listen to?</item>
+        <item>Do you have a pet? If not, would you like to keep one?</item>
+        <item>What's the craziest thing you've ever done?</item>
+        <item>How do you spend your free time?</item>
+        <item>What sports do you like to watch or play?</item>
+        <item>What's most important to you in a friendship?</item>
+        <item>What would a dream trip be like for you?</item>
+        <item>What languages do you speak and what do you like about them?</item>
+        <item>What is something that someone close to you should definitely know about you?</item>
+        <item>What are your goals for the near future?</item>
+        <item>Do you like to cook? What is your speciality?</item>
+        <item>What series do you like?</item>
+        <item>What is your weirdest hobby or passion?</item>
+        <item>How would you describe yourself in three words?</item>
+        <item>What was the most memorable gift you received?</item>
+        <item>Do you like adventure or do you prefer safety?</item>
+        <item>What motivates you most in life?</item>
+        <item>What is your biggest dream?</item>
+        <item>How do you see yourself in five years?</item>
+        <item>What types of people inspire you?</item>
+        <item>Do you like to dance or sing?</item>
+        <item>What topics do you like to talk about?</item>
+        <item>What are the things you definitely observe when you meet a new person?</item>
+        <item>What did you want to become when you were a child?</item>
+        <item>How much does what you do now have to do with what you wanted to become as a child?</item>
+        <item>What is your favourite quote?</item>
+        <item>If you could invite three famous people to dinner, who would they be?</item>
+        <item>What is success for you?</item>
+        <item>What is the biggest challenge you have ever faced?</item>
+        <item>Do you like surprises?</item>
+        <item>How do you manage stress?</item>
+        <item>What is your favourite season and why?</item>
+        <item>What kind of holiday do you prefer: beach holidays or hiking?</item>
+        <item>What would be the first thing you do after winning the lottery?</item>
+        <item>Do you believe in fate or predestination?</item>
+        <item>Which languages would you like to learn?</item>
+        <item>What is something you've always wanted to try but never had the chance to?</item>
+        <item>If you could go back in time, which era would you travel to?</item>
+        <item>What is your earliest memory?</item>
+        <item>What would an ideal weekday be like for you?</item>
+        <item>What qualities do you value in a relationship?</item>
+        <item>How do you feel about travelling and experiencing new cultures?</item>
+        <item>Do you like to read? What was the last book you read?</item>
+        <item>How do you spend your weekends?</item>
+        <item>What is the one food you would never eat?</item>
+        <item>What three things would you take with you to a desert island?</item>
+        <item>What would be your dream job if you could choose anything?</item>
+        <item>Do you believe in love at first sight?</item>
+        <item>What do you love most about the city where you live?</item>
+        <item>What was the last thing you really laughed about?</item>
+        <item>If you could be a different person for a day, who would you trade places with?</item>
+        <item>What inspires you?</item>
+        <item>If you could change one thing in the world, what would it be?</item>
+        <item>Do you like to be spontaneous or do you prefer to plan?</item>
+        <item>Do you prefer to stay at home or go out on the weekends?</item>
+        <item>What is something you would definitely like to achieve in your life?</item>
+        <item>How do you celebrate a success?</item>
+        <item>What is the most important piece of advice you've ever received?</item>
+        <item>What movies do you like?</item>
+        <item>What really gets you energized?</item>
+        <item>Do you like learning new things? If so, what was the last thing you did?</item>
+        <item>Any motto that stuck with you and that you try to live your life by?</item>
+        <item>What role does family play in your life?</item>
+        <item>What is your favourite holiday and how do you celebrate it?</item>
+        <item>Who is your role model or hero?</item>
+        <item>What is the place you've always wanted to go?</item>
+        <item>What makes you feel really happy?</item>
+        <item>What quality do you value most in a person?</item>
+        <item>What human trait bothers you the most?</item>
+        <item>What is it that you are most grateful for in your life?</item>
+</string-array>
 </resources>
