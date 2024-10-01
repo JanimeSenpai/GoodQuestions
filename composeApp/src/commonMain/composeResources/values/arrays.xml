@@ -2,40 +2,40 @@
     <string-array name="questions_university">
         <item>If you could get a free trip, where would you go now and why?</item>
         <item>If you could not work in any intellectual field, what non-intellectual job would you choose?</item>
-        <item>What physical accomplishment are you most proud of?</item>
-        <item>If you were to work in academia in the future, what position would you hold?</item>
-        <item>What do you consider to be your worst human trait?</item>
+        <item>Which of your physical achievements are you most proud of?</item>
+        <item>If you were to work in academia in the future, what position would you occupy?</item>
+        <item>What do you think is your worst human trait?</item>
         <item>What is a movie/series that is very popular but you have not seen? Why?</item>
-        <item>Which film is a must-see for you?</item>
+        <item>Which film is a must-see in your opinion?</item>
         <item>What hobby do you wish you had more time for?</item>
         <item>Which family member are you closest to?</item>
         <item>If you could have one superpower, what would it be?</item>
-        <item>What languages do you speak and want to learn?</item>
-        <item>What rule do you break often?</item>
+        <item>What languages do you speak and what languages do you want to learn?</item>
+        <item>What rules do you break often?</item>
         <item>If you could live in any historical era, which would you choose?</item>
         <item>If you could live in the world of a fantasy novel, which would you choose?</item>
         <item>Would you like to be famous? How?</item>
         <item>What would you consider to be a "perfect" weekday?</item>
-        <item>Tell me three things that you and your partner seem to have in common!</item>
+        <item>Name three things that you and your partner seem to have in common!</item>
         <item>What are you most grateful for in life?</item>
-        <item>If you could change one thing about the way you were raised, what would you change?</item>
+        <item>If you could change one thing about the way you were raised, what would you change?</item
         <item>Tell your partner the story of your life in four minutes, in as much detail as you can!</item>
-        <item>If you could learn the truth about yourself, your life, your future or anything else you'd like to know from a crystal ball</item>
+        <item>If you could learn the truth about yourself, your life, your future or anything else you'd like to know from a crystal ball, what would you like to know?</item>
         <item>Is there something you've been dreaming of doing for a long time? Why haven't you done it yet?</item>
         <item>What is the greatest achievement of your life?</item>
         <item>What is the greatest value to you in a friendship?</item>
-        <item>What is your best memory of this summer?</item>
+        <item>What is your best memory of the last summer?</item>
         <item>If you knew now that you were going to die in a year, would you change anything in your life? Why?</item>
         <item>What does friendship mean to you?</item>
         <item>What role do love and emotions play in your life?</item>
         <item>How close and intimate is your relationship with your family? Do you think you had a happier childhood than most people?</item>
-        <item>Complete the sentence "I wish I had someone to share..."!</item>
-        <item>If you were to become a close friend of your partner, tell me what they would need to know about you!</item>
+        <item>Complete the sentence "I wish I had someone to share with that..."</item>
+        <item>If you were to become a close friend of your partner, say what they should know about you!</item>
         <item>When was the last time someone saw you cry? And when was the last time you cried alone?</item>
         <item>What is something so serious that it shouldn't be made fun of, if there are such things?</item>
-        <item>Your house is on fire and all your possessions in it. You've already rescued your loved ones and pets, but the only thing you can rush back to do is rescue them. What is it? Why?</item>
+        <item>Your house is on fire and all your possessions in it. You've already rescued your loved ones and pets, but there's one more thing you can rush back to get out. What is it? Why?</item>
         <item>How old would you be if you could choose your age now?</item>
-        <item>What would you do with the rest of your life if you didn't have to work now?</item>
+        <item>What would you do with the rest of your life if you didn't have to work from now on?</item>
         <item>What did you want to be ten years ago? How close is this to your current profession?</item>
         <item>If you could do whatever you wanted for a year, what would you do?</item>
         <item>Do you have a secret talent for something, like singing?</item>
@@ -48,35 +48,130 @@
         <item>What type of people do you like?</item>
         <item>What subjects or topics are you not comfortable with (why?)</item>
         <item>What kind of music do you like?</item>
-        <item>Do you have a motto, a story that has stuck with you, that you try to live by, act by?</item>
-        <item>What is one thing you would change in the country? Politics, other...?</item>
+        <item>Do you have a motto, a story that has stuck with you, that you try to live by, to act by?</item>
+        <item>What is something you would change in the country? Politics, or something else...?</item>
         <item>How would you rob a bank?</item>
-        <item>Give me a guess what a cheesecake in a hat looks like</item>
         <item>Would you rather fight a duck the size of a horse, or a horse the size of 100 ducks?</item>
         <item>How would you start a cult?</item>
         <item>How many close friends do you have?</item>
-        <item>Do you go on holiday with your friends or with your family?</item>
-        <item>Why did you choose university over an OKJ course?</item>
+        <item>Do you like going on holiday with your friends or with your family?</item>
         <item>Would you like to move abroad? If so, where?</item>
-        <item>What is the next thing you would like to achieve in your life?</item>
-        <item>Where would you like to be in five years?</item>
-        <item>What do you think makes a friendship work?</item>
+        <item>What is the next thing you want to achieve in your life?</item>
+        <item>Where do you want to be in five years?</item>
+        <item>What do you think makes a friendship progress?</item>
         <item>What is important to you in a friendship?</item>
         <item>What's the best productivity tip you've ever heard?</item>
         <item>Do you procrastinate, if so why?</item>
-        <item>Is there a hobby/project you've wanted to do for a long time but haven't?</item>
+        <item>Is there a hobby/project you've been meaning to get into but haven't?</item>
         <item>What languages do you speak, what do you like about them?</item>
         <item>Do you use AI for work or hobbies?</item>
     </string-array>
 
     <string-array name="questions_friends">
-        <item>@string/question_1</item>
-        <item>@string/question_2</item>
+        <item>What was the happiest moment in your life so far?</item>
+        <item>What is the quality you love most about yourself?</item>
+        <item>If you could travel anywhere in the world, where would you go and why?</item>
+        <item>What book or movie has had the greatest impact on you?</item>
+        <item>What is your biggest dream that you would like to achieve?</item>
+        <item>Who is the person who has had the greatest influence on your life?</item>
+        <item>What is your fondest childhood memory?</item>
+        <item>What do you fear or worry about the most?</item>
+        <item>What is the one thing you've always wanted to learn or try?</item>
+        <item>What is the most valuable lesson you have learned in life?</item>
+        <item>How would you describe the perfect weekday?</item>
+        <item>What really motivates you in life?</item>
+        <item>What music do you listen to when you are happy? And when you are sad?</item>
+        <item>If you could meet any person from history, who would they be and what would you ask them?</item>
+        <item>What was the biggest challenge you faced and how did you overcome it?</item>
+        <item>What is the place or environment where you can be yourself the most?</item>
+        <item>What do you consider to be the most important thing in friendship?</item>
+        <item>Is there anything you regret in your life? If so, what is it?</item>
+        <item>What is your dream job?</item>
+        <item>How do you handle stress or difficult situations?</item>
+        <item>What does success mean to you?</item>
+        <item>What are your goals for the next five years?</item>
+        <item>What makes you the most happy?</item>
+        <item>Which season do you like best and why?</item>
+        <item>If you could be invisible for a day, what would you do?</item>
+        <item>What hobbies or passions do you have?</item>
+        <item>What do you value the most in a friendship?</item>
+        <item>If you could change something in the past, what would it be?</item>
+        <item>What superpower would you choose for yourself and why?</item>
+        <item>What was your most memorable trip?</item>
+        <item>How do you imagine your life will be in ten years?</item>
+        <item>Do you have any special talents or abilities?</item>
+        <item>What do you draw most inspiration from?</item>
+        <item>What values are important to you in life?</item>
+        <item>If you could write a letter to your younger self, what would you write in it?</item>
+        <item>What is the thing you are most proud of?</item>
+        <item>What languages do you speak and are there any you would like to learn?</item>
+        <item>What is something you learned from your parents that you would like to pass on?</item>
+        <item>What do you want to achieve this year?</item>
+        <item>How do you relax or recharge after a long day?</item>
+        <item>What changes would you like to see in the world?</item>
+        <item>Do you have a philosophy or motto that you live by?</item>
+        <item>What do you love most about your hometown?</item>
+        <item>If you won the lottery, what would you do with the money?</item>
+        <item>What's the best advice you've ever been given?</item>
+        <item>What values do you think are important in a community?</item>
+        <item>How do you handle conflict?</item>
+        <item>What is the best gift you have ever received or given?</item>
+        <item>What habits or routines do you have in your daily life?</item>
+        <item>What else would you like to learn in your life?</item>
+        <item>What do you think makes you unique?</item>
+        <item>What historical event would you like to experience if you could?</item>
+        <item>How would you define happiness?</item>
+        <item>How would you define success?</item>
+        <item>What do you value most in others?</item>
+        <item>What are your career goals?</item>
+        <item>What do you think is the meaning of life?</item>
+        <item>What kind of music do you prefer to listen to?</item>
+        <item>Do you have a dream that comes back often?</item>
+        <item>What are you most afraid to do, but still want to try?</item>
+        <item>What is your favourite quote and why?</item>
+        <item>If you could change one thing in the world, what would it be?</item>
+        <item>What is the one thing you are most grateful for in your life?</item>
+        <item>How do you handle failure or disappointment?</item>
+        <item>What role does humour play in your life?</item>
+        <item>What cultural events do you like to attend?</item>
+        <item>What is one quality you admire in others?</item>
+        <item>What are your goals for personal development?</item>
+        <item>If you were to write a book, what would it be about?</item>
+        <item>How do you show your love for others?</item>
+        <item>What new habit would you like to introduce into your life?</item>
+        <item>What makes you feel truly at home somewhere?</item>
     </string-array>
 
     <string-array name="questions_lovers">
-        <item>@string/question_1</item>
-        <item>@string/question_2</item>
+        <item>What did you like most about the place where you grew up? What did you like least?</item>
+        <item>Who was your childhood hero? Why?</item>
+        <item>Who or what influenced your life choices the most?</item>
+        <item>How have you changed since you were in high school?</item>
+        <item>What did you think when you first saw me?</item>
+        <item>Which three of my qualities made you fall in love with me?</item>
+        <item>What is the first image that immediately comes to mind when you think of me?</item>
+        <item>What is the one thing about our relationship that used to bother you but you've since come to accept?</item>
+        <item>What is one thing that you tried to impress me with in the early days of our relationship?</item>
+        <item>What is the one thing that used to bother you about yourself that you have since learned to accept?</item>
+        <item>What is one word or phrase I use that you like?</item>
+        <item>What is your most treasured possession?</item>
+        <item>What were your first words as a child?</item>
+        <item>What is missing in your life?</item>
+        <item>How have you changed in the past year? How have I changed?</item>
+        <item>What is the most surprising thing about love?</item>
+        <item>Have your goals in life changed? How?</item>
+        <item>How do you relate to your mother/father?</item>
+        <item>What is your mission in life?</item>
+        <item>What is one piece of wisdom you learned from observing the person you like the least?</item>
+        <item>What do you find exciting in your life right now?</item>
+        <item>If you could have a magic spell, what would it be?</item>
+        <item>What is your biggest concern about the future?</item>
+        <item>How do you see me in 10 years?</item>
+        <item>What is your love language?</item>
+        <item>What are your goals for our relationship?</item>
+        <item>What are the goals that have not yet been fulfilled in your life?</item>
+        <item>Have your views on our relationship changed? If so, how?</item>
+        <item>What have you done to pull yourself out of the darkest period of your life?</item>
     </string-array>
 
     <string-array name="team_building_questions">
@@ -89,7 +184,6 @@
         <item>What is your favorite way to unwind after a busy day?</item>
         <item>How do you stay motivated during challenging projects?</item>
         <item>What is one thing you’ve learned from a coworker recently?</item>
-        <item>If you could have lunch with any leader, past or present, who would it be and why?</item>
         <item>What is one thing you would change about our work environment?</item>
         <item>How do you handle stress during tight deadlines?</item>
         <item>What is your favorite team-building activity you’ve participated in?</item>
@@ -123,41 +217,39 @@
     </string-array>
 
     <string-array name="Thirtisixquestions_that_lead_to_love">
-        <item>Ha a világon bárkit választhatnál, kit hívnál meg vacsoravendégnek?</item>
-        <item>Szeretnél híres lenni? Hogyan?</item>
-        <item>Volt már olyan, hogy egy telefonbeszélgetés előtt elpróbáltad, hogy mit fogsz mondani? Miért?</item>
-        <item>Számodra miből állna egy „tökéletes” nap?</item>
-        <item>Mikor énekeltél utoljára magadnak? És mikor valaki másnak?</item>
-        <item>Ha 90 évig élhetnél, és életed utolsó 60 évére megőrizhetnéd egy 30 éves szellemi képességeit vagy testét, melyiket választanád?</item>
-        <item>Van valami titkos megérzésed arról, hogy hogyan fogsz meghalni?</item>
-        <item>Mondj három dolgot, amiről úgy tűnik, hogy közös benned és a partneredben!</item>
-        <item>Miért vagy a leghálásabb az életben?</item>
-        <item>Ha megváltoztathatnál valamit abban, hogy hogyan neveltek fel, mit változtatnál meg?</item>
-        <item>Meséld el a partnerednek életed történetét négy percben, olyan részletesen, ahogy csak belefér!</item>
-        <item>Ha választhatnál, hogy holnap reggeltől legyen egy új tulajdonságod vagy képességed, mit szeretnél?</item>
-        <item>Ha egy kristálygömbből megtudhatnád az igazságot magadról, az életedről, a jövődről vagy bármi másról, mit szeretnél tudni?</item>
-        <item>Van olyasmi, amiről régóta álmodozol már, hogy egyszer megcsinálod? Miért nem csináltad még meg?</item>
-        <item>Mi életed legnagyobb teljesítménye?</item>
-        <item>Mi a legnagyobb érték számodra egy barátságban?</item>
-        <item>Mi életed legszebb emléke?</item>
-        <item>Mi életed legrosszabb emléke?</item>
-        <item>Ha most megtudnád, hogy egy év múlva meghalsz, változtatnál valamit az életeden? Miért?</item>
-        <item>Mit jelent számodra a barátság?</item>
-        <item>Milyen szerepet játszanak az életedben a szerelem és az érzelmek?</item>
-        <item>Felváltva nevezzétek meg egy-egy jó tulajdonságát a másiknak! Összesen ötig jussatok el!</item>
-        <item>Mennyire szoros és meghitt a kapcsolatod a családoddal? Szerinted boldogabb gyerekkorod volt, mint az emberek többségének?</item>
-        <item>Milyen a kapcsolatod édesanyáddal?</item>
-        <item>Mondjatok három olyan igaz állítást, ami úgy kezdődik, hogy „mi mind a ketten...”! Példa: „mi mind a ketten úgy érezzük most, hogy...”</item>
-        <item>Fejezd be ezt a mondatot: „bár lenne valaki, akivel megoszthatnám...”!</item>
-        <item>Ha partnerednek közeli barátjává válnál, mondd el, mit kéne neki tudnia rólad!</item>
-        <item>Mondd el partnerednek, hogy mit szeretsz benne, de egészen őszintén, olyan dolgokat is felsorolva, amiket az ember nem szokott egy ismeretlennek mondani!</item>
-        <item>Meséld el a másiknak életed legkínosabb pillanatának történetét!</item>
-        <item>Mikor látott utoljára valaki sírni téged? És mikor sírtál utoljára egyedül?</item>
-        <item>Mondj valamit a partnereddel kapcsolatban, amit már most szeretsz benne!</item>
-        <item>Mi az, ami olyan komoly dolog, hogy nem szabad vele viccelni, már ha egyáltalán vannak ilyen dolgok?</item>
-        <item>Ha ma éjszaka meghalnál úgy, hogy addig már nem is kommunikálhatsz többet egyáltalán senkivel, mivel kapcsolatban sajnálnád a legjobban, hogy nem mondtad el valakinek? És miért nem mondtad el még ezt neki sosem?</item>
-        <item>Kigyullad a házad és benne minden tulajdonod. Kimentetted már a szeretteidet és háziállataidat, de már csak egyvalamiért tudsz visszarohanni, hogy kimentsd. Mi lenne az? Miért?</item>
-        <item>Családtagjaid közül kinek a halálát lenne a legnehezebb feldolgoznod? Miért?</item>
-        <item>Mondd el egy személyes problémádat, és kérd a partnered tanácsát, hogy ő hogyan oldaná meg! Aztán kérd meg a partnered, hogy azt is mondja meg, hogy szerinte benned milyen érzések lehetnek ezzel a kiválasztott problémával kapcsolatban!</item>
+        <item>Given the choice of anyone in the world, whom would you want as a dinner guest?</item>
+        <item>Would you like to be famous? In what way?</item>
+        <item>Before making a telephone call, do you ever rehearse what you are going to say? Why?</item>
+        <item>What could constitute a "perfect" day for you?</item>
+        <item>When did you last sing to yourself? To someone else?</item>
+        <item>If you were able to live to the age of 90 and retain either the mind or body of a 30-year-old for the last 60 years of your life, which would you want?</item>
+        <item>Do you have a secret hunch about how you will die?</item>
+        <item>Name three things you and your partner (the person you are dating) appear to have in common?</item>
+        <item>For what in your life do you feel most grateful?</item>
+        <item>If you could change anything about the way you were raised, what would it be?</item>
+        <item>Take 4 minutes and tell your partner your life story in as much detail as possible.</item>
+        <item>If you could wake up tomorrow having gained any one quality or ability, what would it be?If a crystal ball could tell you the truth about yourself, your life, the future, or anything else what would you want to know?</item>
+        <item>Is there something that you've dreamed of doing for a long time? Why haven't you done it?</item>
+        <item>What is the greatest accomplishment of your life?</item>
+        <item>What do you value most in a friendship?</item>
+        <item>What is your most treasured memory?</item>
+        <item>What is your most terrible memory?</item>
+        <item>If you knew that in one year you would die suddenly, would you change anything about the way you are now living? Why?</item>
+        <item>What does friendship mean to you?</item>
+        <item>What roles do love and affection play in your life?</item>
+        <item>Alternate sharing something you consider a positive characteristic of your partner (the person you are dating). Share a total of 5 items.</item>
+        <item>How close and warm is your family? Do you feel your childhood was happier than most other people's?</item>
+        <item>How do you feel about your relationship with your mother?Make 3 true 'we' statements each. For instance "We are both in this room feeling..."</item>
+        <item>Complete this sentence: "I wish I had someone with whom I could share..."</item>
+        <item>If you were going to become a close friend with your partner, please share what would be important for him or her to know.</item>
+        <item>Tell your partner what you like about them; be very honest this time saying things that you might not say to someone you've just met.</item>
+        <item>Share with your partner an embarrassing moment in your life.</item>
+        <item>When did you last cry in front of another person? By yourself?</item>
+        <item>Tell your partner something that you love about them already?</item>
+        <item>What if anything, is too serious to be joked about?</item>
+        <item>If you were to die this evening with no opportunity to communicate with anyone, what would you most regret not having told someone? What haven’t you told them yet?</item>
+        <item>Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?</item>
+        <item>Of all the people in your family, whose death would you find most disturbing? Why?</item>
+        <item>Share a personal problem and ask your partner’s advice on how he or she might handle it. Also, as your partner to reflect back to you how you seem to be feeling about the problem you have chosen.</item>
     </string-array>
 </resources>
