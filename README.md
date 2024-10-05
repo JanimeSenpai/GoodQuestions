@@ -1,21 +1,31 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop.
+# Good Questions
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+Dialogue Dive is a Kotlin Multiplatform application designed to facilitate engaging conversations through a series of curated questions. The app is structured to guide users from light-hearted small talk to deeper, more meaningful discussions.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## Features
 
+- **Curated Question Lists**: Choose from various categories like "University Students," "Close Friends," "Couples," "Coworkers," and "The 36 Questions That Lead to Love."
+- **Platform Support**: Available on both Android and Web platforms.
+- **Options for customizing experience**: Includes features like shuffle and loop for question lists.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+## Getting Started
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+### Prerequisites
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+- **Kotlin**: Ensure you have Kotlin installed on your machine.
+- **Android Studio**: Recommended for Android development.
+- **Node.js**: Required for building and running the web version.
+
+### Installation
+
+1. **Clone the Repository**
+2. **Open in Android Studio**
+
+   - Open Android Studio and select "Open an existing project."
+   - Navigate to the cloned repository and open it.
+
+3. **Build the Project**
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
