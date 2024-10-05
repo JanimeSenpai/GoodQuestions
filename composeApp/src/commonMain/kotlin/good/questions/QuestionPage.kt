@@ -46,7 +46,6 @@ fun QuestionsPage(
 
     val currentQuestion by viewModel.currentQuestion.collectAsState()
     val isEndOfList by viewModel.endOfQuestionList.collectAsState()
-
     LaunchedEffect(audience) {
         questions.value = getQuestionsForAudience(audienceID)
         viewModel.importQuestions(questions.value)

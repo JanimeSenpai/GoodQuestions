@@ -8,3 +8,4 @@ actual fun openUrl(url: String,open:Int) {
 
 actual fun openUrlwasm(url: String) {
 }
+
