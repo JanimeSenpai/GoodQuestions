@@ -1,4 +1,4 @@
-# Good Questions
+# Dialogue Dive
 
 Dialogue Dive is a Kotlin Multiplatform application designed to facilitate engaging conversations through a series of curated questions. The app is structured to guide users from light-hearted small talk to deeper, more meaningful discussions.
 
