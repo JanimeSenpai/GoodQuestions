@@ -26,6 +26,8 @@ Dialogue Dive is a Kotlin Multiplatform application designed to facilitate engag
 
 3. **Build the Project**
 
+Alternatively you can visit https://dialogue-dive.web.app/
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
