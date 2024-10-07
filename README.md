@@ -4,7 +4,7 @@ Dialogue Dive is a Kotlin Multiplatform application designed to facilitate engag
 
 ## Features
 
-- **Curated Question Lists**: Choose from various categories like "University Students," "Friends," "Speed Dating," "Coworkers," and "The 36 Questions That Lead to Love."
+- **Curated Question Lists**: Choose from various categories like University Students, Friends, Speed Dating, Coworkers, and The 36 Questions That Lead to Love.
 - **Platform Support**: Available on both Android and Web platforms.
 - **Options for customizing experience**: Includes features like shuffle and loop for question lists.
 
